@@ -12,7 +12,7 @@ begin
   First verified: October 19, 2025
   DOI: https://doi.org/10.5281/zenodo.17388701
   
-  Citation: Scherf, M. (2025). Complete Formal Axiomatization of Dzogchen:
+  Citation: Scherf, M. (2025). Complete Formal Axiomatization of Empirical Non Duality:
   Machine-Verified Non-Dual Metaphysics. Isabelle/HOL formalization.
 *)
 (*
