@@ -1,6 +1,0 @@
-session "NonDuality" (AFP) = HOL +
-  options [document = pdf]
-  theories
-    NonDuality
-document_files (in "document")
-  "root.tex"

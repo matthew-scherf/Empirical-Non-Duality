@@ -1,4 +1,4 @@
-theory NonDuality
+theory The_Unique_Ontic_Substrate
   imports Main
 begin
 (*
@@ -16,7 +16,7 @@ begin
   Machine-Verified Non-Dual Metaphysics. Isabelle/HOL formalization.
 *)
 (*
-  EMPIRICAL NON-DUALITY 
+  The Unique Ontic Substrate
   Isabelle/HOL 2025
 
   Core:

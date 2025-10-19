@@ -1,0 +1,10 @@
+chapter AFP
+
+session "The_Unique_Ontic_Substrate" (AFP) = HOL +
+  options [timeout = 1800, document = pdf, document_build = "pdflatex"]
+  directories "The_Unique_Ontic_Substrate"
+  theories
+    The_Unique_Ontic_Substrate
+  document_files
+    "root.tex"
+
