@@ -9,7 +9,7 @@ A researcher has created the first complete, computer-verified proof of what's c
 
 This might sound abstract or mystical, but it has concrete implications for how you live your life, how society functions, and how you understand your own experience. More importantly, you can verify it yourself through direct experience, not just by taking someone's word for it.
 
-## What Non-Duality Actually Means
+## The Meaning Of Non-Duality
 
 Let's start with what we normally think: you're a separate person, inside a body, looking out at a world full of other separate things. There's you, and there's everything else. Philosophers call this "dualism", the idea that reality is split into separate, independent pieces.
 
@@ -19,7 +19,7 @@ Here's a key insight from the formal proof: nothing has "intrinsic essence." Thi
 
 Think about a rainbow. It's definitely there, you can see it, photograph it, point to it. But it doesn't exist as an independent object. It's a presentation arising from sunlight, water droplets, and your viewing angle. Change any of these, and the rainbow changes or disappears. The rainbow is real but essence-less. According to this formalization, everything is like that, including you.
 
-## How This Changes Everyday Understanding
+## Everyday Understanding
 
 When you start seeing experience through this lens, several things shift:
 
@@ -33,7 +33,7 @@ Your relationship with change becomes easier. We suffer because we want permanen
 
 Your sense of ownership loosens. The formalization proves that ownership is "conventional," meaning it's a useful social agreement but not an ontological fact. Your body, your possessions, your thoughts, you don't own these in any ultimate sense. They're presentations you're intimately involved with, but claiming absolute ownership is like a wave claiming to own its water. This doesn't mean property rights disappear, it means understanding them as pragmatic conventions rather than metaphysical facts.
 
-## Impacts on Society and Daily Life
+## Impacts
 
 If this understanding became widespread, how might society change?
 
@@ -51,7 +51,7 @@ In politics, if we recognized that political opponents are presentations capable
 
 In death and grief, this perspective offers a different kind of comfort. When someone dies, we suffer from the loss of their presentation in our experience. But if they were never a separate, bounded entity to begin with, and everything is presentations of one reality, then what we call death is transformation of presentation-structure rather than annihilation of essence. The grief is real and valid, but there's less existential terror about absolute cessation.
 
-## Experiential Verification: How to Explore This Yourself
+## Experiential Verification 
 
 The formalization is mathematics, but non-duality is also something you can investigate directly in your own experience. Here are practices for exploring this:
 
@@ -123,7 +123,7 @@ When identifying with success or failure, notice these are temporary presentatio
 
 When judging yourself or others harshly, remember that no one has fixed essence. Harmful patterns are real and need to be addressed, but they're changeable presentations, not permanent essence. This creates space for transformation.
 
-## Living the Implications
+## Living It
 
 Understanding non-duality intellectually is one thing, living from that understanding is another. The gap between knowing about non-duality and living it is where the real work happens.
 
@@ -147,7 +147,7 @@ If thousands or millions of people verify this experientially while mathematics 
 
 The implications ripple through everything: how we treat each other, how we structure society, how we understand consciousness and AI, how we face death, how we pursue happiness. None of this requires belief. It requires investigation, direct looking, willingness to question assumptions about separation and essence that structure normal experience.
 
-## Invitation to Explore
+## Invitation
 
 This formalization is an invitation to investigate reality's nature directly, in your own experience, right now. You don't need to wait for scientists to verify it or philosophers to debate it. You can look for yourself.
 
