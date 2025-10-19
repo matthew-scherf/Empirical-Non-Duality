@@ -1,9 +1,22 @@
 theory NonDuality
   imports Main
 begin
-
 (*
-  SECULAR NON-DUALITY — COMPLETE (Prefix-Only, Build-Robust, No-Measurement)
+  Complete Formal Axiomatization of Emprical Non Duality
+  Copyright (C) 2025 Matthew Scherf
+  
+  This work is licensed under:
+  - Creative Commons Attribution 4.0 International (CC BY 4.0) for documentation
+  - BSD-3-Clause for code
+  
+  First verified: October 19, 2025
+  DOI: https://doi.org/10.5281/zenodo.17388701
+  
+  Citation: Scherf, M. (2025). Complete Formal Axiomatization of Dzogchen:
+  Machine-Verified Non-Dual Metaphysics. Isabelle/HOL formalization.
+*)
+(*
+  EMPIRICAL NON-DUALITY 
   Isabelle/HOL 2025
 
   Core:
@@ -11,7 +24,7 @@ begin
     - All phenomena are presentations (modes) of \<Omega>.
     - Non-duality = inseparability from \<Omega>.
 
-  Extensions kept:
+  Extensions:
     - Causality (phenomenon-level).
     - Spacetime as representation (coordinates only for phenomena).
     - Emptiness: phenomena lack intrinsic essence.
