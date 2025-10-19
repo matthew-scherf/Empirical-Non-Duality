@@ -1,0 +1,972 @@
+%
+\begin{isabellebody}%
+\setisabellecontext{NonDuality}%
+%
+\isadelimtheory
+%
+\endisadelimtheory
+%
+\isatagtheory
+\isakeywordONE{theory}\isamarkupfalse%
+\ NonDuality\isanewline
+\ \ \isakeywordTWO{imports}\ Main\isanewline
+\isakeywordTWO{begin}%
+\endisatagtheory
+{\isafoldtheory}%
+%
+\isadelimtheory
+%
+\endisadelimtheory
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Core Ontology%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{typedecl}\isamarkupfalse%
+\ E\ \ \isanewline
+\isanewline
+\isakeywordONE{consts}\isamarkupfalse%
+\isanewline
+\ \ Phenomenon\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\ \ Substrate\ \ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\ \ Presents\ \ \ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \ \ \isanewline
+\ \ Inseparable\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ A{\isadigit{1}}{\isacharunderscore}{\kern0pt}existence{\isacharcolon}{\kern0pt}\ \ \ \ \ {\isachardoublequoteopen}{\isasymexists}s{\isachardot}{\kern0pt}\ Substrate\ s{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ A{\isadigit{2}}{\isacharunderscore}{\kern0pt}uniqueness{\isacharcolon}{\kern0pt}\ \ \ \ {\isachardoublequoteopen}{\isasymforall}a\ b{\isachardot}{\kern0pt}\ Substrate\ a\ {\isasymlongrightarrow}\ Substrate\ b\ {\isasymlongrightarrow}\ a\ {\isacharequal}{\kern0pt}\ b{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ A{\isadigit{3}}{\isacharunderscore}{\kern0pt}exhaustivity{\isacharcolon}{\kern0pt}\ \ {\isachardoublequoteopen}{\isasymforall}x{\isachardot}{\kern0pt}\ Phenomenon\ x\ {\isasymor}\ Substrate\ x{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ A{\isadigit{4}}{\isacharunderscore}{\kern0pt}presentation{\isacharcolon}{\kern0pt}\ \ {\isachardoublequoteopen}{\isasymforall}p\ s{\isachardot}{\kern0pt}\ Phenomenon\ p\ {\isasymand}\ Substrate\ s\ {\isasymlongrightarrow}\ Presents\ p\ s{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ A{\isadigit{5}}{\isacharunderscore}{\kern0pt}insep{\isacharunderscore}{\kern0pt}def{\isacharcolon}{\kern0pt}\ \ \ \ \ {\isachardoublequoteopen}{\isasymforall}x\ y{\isachardot}{\kern0pt}\ Inseparable\ x\ y\ {\isasymlongleftrightarrow}\ {\isacharparenleft}{\kern0pt}{\isasymexists}s{\isachardot}{\kern0pt}\ Substrate\ s\ {\isasymand}\ Presents\ x\ s\ {\isasymand}\ y\ {\isacharequal}{\kern0pt}\ s{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ unique{\isacharunderscore}{\kern0pt}substrate{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymexists}{\isacharbang}{\kern0pt}s{\isachardot}{\kern0pt}\ Substrate\ s{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ A{\isadigit{1}}{\isacharunderscore}{\kern0pt}existence\ A{\isadigit{2}}{\isacharunderscore}{\kern0pt}uniqueness\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}metis{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ TheSubstrate\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E{\isachardoublequoteclose}\ \ {\isacharparenleft}{\kern0pt}{\isachardoublequoteopen}{\isasymOmega}{\isachardoublequoteclose}{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{where}\ {\isachardoublequoteopen}{\isasymOmega}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}SOME\ s{\isachardot}{\kern0pt}\ Substrate\ s{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ substrate{\isacharunderscore}{\kern0pt}Omega{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Substrate\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ TheSubstrate{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{using}\isamarkupfalse%
+\ A{\isadigit{1}}{\isacharunderscore}{\kern0pt}existence\ someI{\isacharunderscore}{\kern0pt}ex\ \isakeywordONE{by}\isamarkupfalse%
+\ metis%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ only{\isacharunderscore}{\kern0pt}substrate{\isacharunderscore}{\kern0pt}is{\isacharunderscore}{\kern0pt}Omega{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Substrate\ s\ {\isasymLongrightarrow}\ s\ {\isacharequal}{\kern0pt}\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ substrate{\isacharunderscore}{\kern0pt}Omega\ A{\isadigit{2}}{\isacharunderscore}{\kern0pt}uniqueness\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ consistency{\isacharunderscore}{\kern0pt}witness{\isacharcolon}{\kern0pt}\ True%
+\isadelimproof
+\ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Non-Duality%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{theorem}\isamarkupfalse%
+\ Nonduality{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}{\isasymforall}p{\isachardot}{\kern0pt}\ Phenomenon\ p\ {\isasymlongrightarrow}\ Inseparable\ p\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{proof}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}intro\ allI\ impI{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordTHREE{fix}\isamarkupfalse%
+\ p\ \isakeywordTHREE{assume}\isamarkupfalse%
+\ P{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Phenomenon\ p{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordONE{from}\isamarkupfalse%
+\ P\ substrate{\isacharunderscore}{\kern0pt}Omega\ A{\isadigit{4}}{\isacharunderscore}{\kern0pt}presentation\ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}Presents\ p\ {\isasymOmega}{\isachardoublequoteclose}\ \isakeywordONE{by}\isamarkupfalse%
+\ blast\isanewline
+\ \ \isakeywordONE{hence}\isamarkupfalse%
+\ {\isachardoublequoteopen}{\isasymexists}s{\isachardot}{\kern0pt}\ Substrate\ s\ {\isasymand}\ Presents\ p\ s\ {\isasymand}\ {\isasymOmega}\ {\isacharequal}{\kern0pt}\ s{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{using}\isamarkupfalse%
+\ substrate{\isacharunderscore}{\kern0pt}Omega\ \isakeywordONE{by}\isamarkupfalse%
+\ blast\isanewline
+\ \ \isakeywordTHREE{thus}\isamarkupfalse%
+\ {\isachardoublequoteopen}Inseparable\ p\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{using}\isamarkupfalse%
+\ A{\isadigit{5}}{\isacharunderscore}{\kern0pt}insep{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ blast\isanewline
+\isakeywordONE{qed}\isamarkupfalse%
+%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Causality (Phenomenon-Level)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{consts}\isamarkupfalse%
+\ CausallyPrecedes\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \ \ \isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ C{\isadigit{1}}{\isacharunderscore}{\kern0pt}only{\isacharunderscore}{\kern0pt}phenomena{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymforall}x\ y{\isachardot}{\kern0pt}\ CausallyPrecedes\ x\ y\ {\isasymlongrightarrow}\ Phenomenon\ x\ {\isasymand}\ Phenomenon\ y{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ C{\isadigit{2}}{\isacharunderscore}{\kern0pt}irreflexive{\isacharcolon}{\kern0pt}\ \ \ \ {\isachardoublequoteopen}{\isasymforall}x{\isachardot}{\kern0pt}\ Phenomenon\ x\ {\isasymlongrightarrow}\ {\isasymnot}\ CausallyPrecedes\ x\ x{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ C{\isadigit{3}}{\isacharunderscore}{\kern0pt}transitive{\isacharcolon}{\kern0pt}\ \ \ \ \ {\isachardoublequoteopen}{\isasymforall}x\ y\ z{\isachardot}{\kern0pt}\ CausallyPrecedes\ x\ y\ {\isasymand}\ CausallyPrecedes\ y\ z\ {\isasymlongrightarrow}\ CausallyPrecedes\ x\ z{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Causal{\isacharunderscore}{\kern0pt}left{\isacharunderscore}{\kern0pt}NotTwo{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}CausallyPrecedes\ x\ y{\isachardoublequoteclose}\ \isakeywordTWO{shows}\ {\isachardoublequoteopen}Inseparable\ x\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ C{\isadigit{1}}{\isacharunderscore}{\kern0pt}only{\isacharunderscore}{\kern0pt}phenomena\ Nonduality\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Causal{\isacharunderscore}{\kern0pt}right{\isacharunderscore}{\kern0pt}NotTwo{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}CausallyPrecedes\ x\ y{\isachardoublequoteclose}\ \isakeywordTWO{shows}\ {\isachardoublequoteopen}Inseparable\ y\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ C{\isadigit{1}}{\isacharunderscore}{\kern0pt}only{\isacharunderscore}{\kern0pt}phenomena\ Nonduality\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Spacetime as Representation (Coordinates only for Phenomena)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{typedecl}\isamarkupfalse%
+\ Frame\isanewline
+\isakeywordONE{typedecl}\isamarkupfalse%
+\ R{\isadigit{4}}\ \ \ \ \ \isanewline
+\isanewline
+\isakeywordONE{consts}\isamarkupfalse%
+\isanewline
+\ \ coord\ \ \ \ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Frame\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ R{\isadigit{4}}\ option{\isachardoublequoteclose}\isanewline
+\ \ GaugeRel\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Frame\ {\isasymRightarrow}\ Frame\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ S{\isadigit{1}}{\isacharunderscore}{\kern0pt}coords{\isacharunderscore}{\kern0pt}only{\isacharunderscore}{\kern0pt}for{\isacharunderscore}{\kern0pt}phenomena{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymforall}f\ x\ r{\isachardot}{\kern0pt}\ coord\ f\ x\ {\isacharequal}{\kern0pt}\ Some\ r\ {\isasymlongrightarrow}\ Phenomenon\ x{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ S{\isadigit{2}}{\isacharunderscore}{\kern0pt}gauge{\isacharunderscore}{\kern0pt}invariance{\isacharunderscore}{\kern0pt}definedness{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymforall}f\ g\ x{\isachardot}{\kern0pt}\ GaugeRel\ f\ g\ {\isasymlongrightarrow}\ {\isacharparenleft}{\kern0pt}coord\ f\ x\ {\isacharequal}{\kern0pt}\ None\ {\isasymlongleftrightarrow}\ coord\ g\ x\ {\isacharequal}{\kern0pt}\ None{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Spacetime{\isacharunderscore}{\kern0pt}unreality{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}coord\ f\ x\ {\isasymnoteq}\ None{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}Inseparable\ x\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{proof}\isamarkupfalse%
+\ {\isacharminus}{\kern0pt}\isanewline
+\ \ \isakeywordONE{from}\isamarkupfalse%
+\ assms\ \isakeywordTHREE{obtain}\isamarkupfalse%
+\ r\ \isakeywordTWO{where}\ {\isachardoublequoteopen}coord\ f\ x\ {\isacharequal}{\kern0pt}\ Some\ r{\isachardoublequoteclose}\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}cases\ {\isachardoublequoteopen}coord\ f\ x{\isachardoublequoteclose}{\isacharparenright}{\kern0pt}\ auto\isanewline
+\ \ \isakeywordONE{hence}\isamarkupfalse%
+\ {\isachardoublequoteopen}Phenomenon\ x{\isachardoublequoteclose}\ \isakeywordONE{using}\isamarkupfalse%
+\ S{\isadigit{1}}{\isacharunderscore}{\kern0pt}coords{\isacharunderscore}{\kern0pt}only{\isacharunderscore}{\kern0pt}for{\isacharunderscore}{\kern0pt}phenomena\ \isakeywordONE{by}\isamarkupfalse%
+\ blast\isanewline
+\ \ \isakeywordTHREE{thus}\isamarkupfalse%
+\ {\isachardoublequoteopen}Inseparable\ x\ {\isasymOmega}{\isachardoublequoteclose}\ \isakeywordONE{using}\isamarkupfalse%
+\ Nonduality\ \isakeywordONE{by}\isamarkupfalse%
+\ blast\isanewline
+\isakeywordONE{qed}\isamarkupfalse%
+%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Emptiness: No Intrinsic Essence of Phenomena%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{consts}\isamarkupfalse%
+\ Essence\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ Emptiness{\isacharunderscore}{\kern0pt}of{\isacharunderscore}{\kern0pt}Phenomena{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymforall}x{\isachardot}{\kern0pt}\ Phenomenon\ x\ {\isasymlongrightarrow}\ {\isasymnot}\ Essence\ x{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Endogenous / Dependent Arising%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{consts}\isamarkupfalse%
+\ ArisesFrom\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \ \ \isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ AF{\isacharunderscore}{\kern0pt}only{\isacharunderscore}{\kern0pt}pheno{\isacharcolon}{\kern0pt}\ \ \ {\isachardoublequoteopen}{\isasymforall}p\ q{\isachardot}{\kern0pt}\ ArisesFrom\ p\ q\ {\isasymlongrightarrow}\ Phenomenon\ p\ {\isasymand}\ Phenomenon\ q{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ AF{\isacharunderscore}{\kern0pt}endogenous{\isacharcolon}{\kern0pt}\ \ \ {\isachardoublequoteopen}{\isasymforall}p\ q{\isachardot}{\kern0pt}\ ArisesFrom\ p\ q\ {\isasymlongrightarrow}\ {\isacharparenleft}{\kern0pt}{\isasymexists}s{\isachardot}{\kern0pt}\ Substrate\ s\ {\isasymand}\ Presents\ p\ s\ {\isasymand}\ Presents\ q\ s{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ AF{\isacharunderscore}{\kern0pt}no{\isacharunderscore}{\kern0pt}exogenous{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymforall}p\ q{\isachardot}{\kern0pt}\ ArisesFrom\ p\ q\ {\isasymlongrightarrow}\ {\isasymnot}\ {\isacharparenleft}{\kern0pt}{\isasymexists}z{\isachardot}{\kern0pt}\ {\isasymnot}\ Phenomenon\ z\ {\isasymand}\ {\isasymnot}\ Substrate\ z{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Non-Appropriation (Ownership is Conventional)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{typedecl}\isamarkupfalse%
+\ Agent\isanewline
+\isakeywordONE{consts}\isamarkupfalse%
+\ Owns\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Agent\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isakeywordONE{consts}\isamarkupfalse%
+\ ValidConv\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ Ownership{\isacharunderscore}{\kern0pt}is{\isacharunderscore}{\kern0pt}conventional{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymforall}a\ p{\isachardot}{\kern0pt}\ Owns\ a\ p\ {\isasymlongrightarrow}\ Phenomenon\ p\ {\isasymand}\ ValidConv\ p{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ No{\isacharunderscore}{\kern0pt}ontic{\isacharunderscore}{\kern0pt}ownership{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymforall}a\ p{\isachardot}{\kern0pt}\ Owns\ a\ p\ {\isasymlongrightarrow}\ Inseparable\ p\ {\isasymOmega}\ {\isasymand}\ {\isasymnot}\ Essence\ p{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Symmetry / Gauge on Phenomena%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{typedecl}\isamarkupfalse%
+\ G\isanewline
+\isakeywordONE{consts}\isamarkupfalse%
+\ act\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}G\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ E{\isachardoublequoteclose}\ \ \ \isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ Act{\isacharunderscore}{\kern0pt}closed{\isacharcolon}{\kern0pt}\ \ \ \ \ \ \ \ \ \ \ \ {\isachardoublequoteopen}{\isasymforall}g\ x{\isachardot}{\kern0pt}\ Phenomenon\ x\ {\isasymlongrightarrow}\ Phenomenon\ {\isacharparenleft}{\kern0pt}act\ g\ x{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ Act{\isacharunderscore}{\kern0pt}pres{\isacharunderscore}{\kern0pt}presentation{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymforall}g\ x{\isachardot}{\kern0pt}\ Presents\ x\ {\isasymOmega}\ {\isasymlongrightarrow}\ Presents\ {\isacharparenleft}{\kern0pt}act\ g\ x{\isacharparenright}{\kern0pt}\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Symmetry{\isacharunderscore}{\kern0pt}preserves{\isacharunderscore}{\kern0pt}NotTwo{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}Phenomenon\ x{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}Inseparable\ {\isacharparenleft}{\kern0pt}act\ g\ x{\isacharparenright}{\kern0pt}\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ Act{\isacharunderscore}{\kern0pt}closed\ Act{\isacharunderscore}{\kern0pt}pres{\isacharunderscore}{\kern0pt}presentation\ A{\isadigit{5}}{\isacharunderscore}{\kern0pt}insep{\isacharunderscore}{\kern0pt}def\ substrate{\isacharunderscore}{\kern0pt}Omega\ Nonduality\isanewline
+\ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}metis{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Concepts / Annotations%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{typedecl}\isamarkupfalse%
+\ Concept\isanewline
+\isakeywordONE{consts}\isamarkupfalse%
+\ Applies\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Concept\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ Concepts{\isacharunderscore}{\kern0pt}are{\isacharunderscore}{\kern0pt}annotations{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymforall}c\ x{\isachardot}{\kern0pt}\ Applies\ c\ x\ {\isasymlongrightarrow}\ Phenomenon\ x{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Concepts{\isacharunderscore}{\kern0pt}don{\isacharprime}{\kern0pt}t{\isacharunderscore}{\kern0pt}reify{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}Applies\ c\ x{\isachardoublequoteclose}\ \isakeywordTWO{shows}\ {\isachardoublequoteopen}Inseparable\ x\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ Concepts{\isacharunderscore}{\kern0pt}are{\isacharunderscore}{\kern0pt}annotations\ Nonduality\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Quantities for Information and Time%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{typedecl}\isamarkupfalse%
+\ Q%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Information Layer (Abstract Nonnegativity)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{consts}\isamarkupfalse%
+\isanewline
+\ \ Info\ \ \ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ Q{\isachardoublequoteclose}\isanewline
+\ \ Nonneg\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Q\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ Info{\isacharunderscore}{\kern0pt}nonneg{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymforall}x{\isachardot}{\kern0pt}\ Phenomenon\ x\ {\isasymlongrightarrow}\ Nonneg\ {\isacharparenleft}{\kern0pt}Info\ x{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Info{\isacharunderscore}{\kern0pt}nonreifying{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}Phenomenon\ x{\isachardoublequoteclose}\ \isakeywordTWO{shows}\ {\isachardoublequoteopen}Inseparable\ x\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ Nonduality\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Emergent Time (Abstract Strict Order on Q)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{consts}\isamarkupfalse%
+\isanewline
+\ \ T\ \ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ Q{\isachardoublequoteclose}\ \ \ \ \ \ \ \ \ \ \ \isanewline
+\ \ LT\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Q\ {\isasymRightarrow}\ Q\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \ \ \isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ LT{\isacharunderscore}{\kern0pt}irrefl{\isacharcolon}{\kern0pt}\ \ \ \ \ {\isachardoublequoteopen}{\isasymforall}q{\isachardot}{\kern0pt}\ {\isasymnot}\ LT\ q\ q{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ LT{\isacharunderscore}{\kern0pt}trans{\isacharcolon}{\kern0pt}\ \ \ \ \ \ {\isachardoublequoteopen}{\isasymforall}a\ b\ c{\isachardot}{\kern0pt}\ LT\ a\ b\ {\isasymand}\ LT\ b\ c\ {\isasymlongrightarrow}\ LT\ a\ c{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ Time{\isacharunderscore}{\kern0pt}monotone{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymforall}x\ y{\isachardot}{\kern0pt}\ CausallyPrecedes\ x\ y\ {\isasymlongrightarrow}\ LT\ {\isacharparenleft}{\kern0pt}T\ x{\isacharparenright}{\kern0pt}\ {\isacharparenleft}{\kern0pt}T\ y{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Time{\isacharunderscore}{\kern0pt}emergent{\isacharunderscore}{\kern0pt}NotTwo{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}Phenomenon\ x{\isachardoublequoteclose}\ \isakeywordTWO{shows}\ {\isachardoublequoteopen}Inseparable\ x\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ Nonduality\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Two-Levels Coherence%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{consts}\isamarkupfalse%
+\ Coherent\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ Conventional{\isacharunderscore}{\kern0pt}is{\isacharunderscore}{\kern0pt}model{\isacharunderscore}{\kern0pt}relative{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isasymforall}x{\isachardot}{\kern0pt}\ ValidConv\ x\ {\isasymlongrightarrow}\ Phenomenon\ x{\isachardoublequoteclose}\ \isakeywordTWO{and}\isanewline
+\ \ Ultimate{\isacharunderscore}{\kern0pt}coherence{\isacharcolon}{\kern0pt}\ \ \ \ \ \ \ \ \ \ \ \ \ {\isachardoublequoteopen}Coherent\ {\isasymOmega}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Notation and Robustness%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ NotTwo\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}E\ {\isasymRightarrow}\ E\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{where}\ {\isachardoublequoteopen}NotTwo\ x\ y\ {\isasymlongleftrightarrow}\ Inseparable\ x\ y{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Phenomenon{\isacharunderscore}{\kern0pt}NotTwo{\isacharunderscore}{\kern0pt}Base{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}Phenomenon\ p\ {\isasymLongrightarrow}\ NotTwo\ p\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ Nonduality\ NotTwo{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ Any{\isacharunderscore}{\kern0pt}presentation{\isacharunderscore}{\kern0pt}structure{\isacharunderscore}{\kern0pt}preserves{\isacharunderscore}{\kern0pt}NotTwo{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}Phenomenon\ x{\isachardoublequoteclose}\ \isakeywordTWO{shows}\ {\isachardoublequoteopen}NotTwo\ x\ {\isasymOmega}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ Nonduality\ NotTwo{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+%
+\isadelimtheory
+\isanewline
+%
+\endisadelimtheory
+%
+\isatagtheory
+\isakeywordTWO{end}\isamarkupfalse%
+%
+\endisatagtheory
+{\isafoldtheory}%
+%
+\isadelimtheory
+%
+\endisadelimtheory
+%
+\end{isabellebody}%
+\endinput
+%:%file=~/Documents/GitHub/AFP/isabelle/four_systems/NonDuality/NonDuality.thy%:%
+%:%10=1%:%
+%:%11=1%:%
+%:%12=2%:%
+%:%13=3%:%
+%:%27=43%:%
+%:%37=45%:%
+%:%38=45%:%
+%:%39=46%:%
+%:%40=47%:%
+%:%41=47%:%
+%:%42=48%:%
+%:%43=49%:%
+%:%44=50%:%
+%:%45=51%:%
+%:%46=52%:%
+%:%47=53%:%
+%:%48=53%:%
+%:%49=54%:%
+%:%50=55%:%
+%:%51=56%:%
+%:%52=57%:%
+%:%53=58%:%
+%:%54=59%:%
+%:%55=60%:%
+%:%56=60%:%
+%:%59=61%:%
+%:%63=61%:%
+%:%64=61%:%
+%:%65=61%:%
+%:%70=61%:%
+%:%73=62%:%
+%:%74=63%:%
+%:%75=63%:%
+%:%76=64%:%
+%:%77=65%:%
+%:%78=66%:%
+%:%79=66%:%
+%:%82=67%:%
+%:%86=67%:%
+%:%87=67%:%
+%:%88=67%:%
+%:%89=67%:%
+%:%94=67%:%
+%:%97=68%:%
+%:%98=69%:%
+%:%99=69%:%
+%:%102=70%:%
+%:%106=70%:%
+%:%107=70%:%
+%:%108=70%:%
+%:%113=70%:%
+%:%116=71%:%
+%:%117=72%:%
+%:%118=72%:%
+%:%120=72%:%
+%:%124=72%:%
+%:%125=72%:%
+%:%139=75%:%
+%:%149=77%:%
+%:%150=77%:%
+%:%151=78%:%
+%:%158=79%:%
+%:%159=79%:%
+%:%160=80%:%
+%:%161=80%:%
+%:%162=80%:%
+%:%163=81%:%
+%:%164=81%:%
+%:%165=81%:%
+%:%166=81%:%
+%:%167=82%:%
+%:%168=82%:%
+%:%169=83%:%
+%:%170=83%:%
+%:%171=83%:%
+%:%172=84%:%
+%:%173=84%:%
+%:%174=85%:%
+%:%175=85%:%
+%:%176=85%:%
+%:%177=86%:%
+%:%192=88%:%
+%:%202=90%:%
+%:%203=90%:%
+%:%204=91%:%
+%:%205=92%:%
+%:%206=92%:%
+%:%207=93%:%
+%:%208=94%:%
+%:%209=95%:%
+%:%210=96%:%
+%:%211=97%:%
+%:%212=97%:%
+%:%213=98%:%
+%:%216=99%:%
+%:%220=99%:%
+%:%221=99%:%
+%:%222=99%:%
+%:%227=99%:%
+%:%230=100%:%
+%:%231=101%:%
+%:%232=101%:%
+%:%233=102%:%
+%:%236=103%:%
+%:%240=103%:%
+%:%241=103%:%
+%:%242=103%:%
+%:%256=105%:%
+%:%266=107%:%
+%:%267=107%:%
+%:%268=108%:%
+%:%269=108%:%
+%:%270=109%:%
+%:%271=110%:%
+%:%272=110%:%
+%:%273=111%:%
+%:%274=112%:%
+%:%275=113%:%
+%:%276=114%:%
+%:%277=114%:%
+%:%278=115%:%
+%:%279=116%:%
+%:%280=117%:%
+%:%281=118%:%
+%:%282=119%:%
+%:%283=120%:%
+%:%284=120%:%
+%:%285=121%:%
+%:%286=122%:%
+%:%293=123%:%
+%:%294=123%:%
+%:%295=124%:%
+%:%296=124%:%
+%:%297=124%:%
+%:%298=124%:%
+%:%299=125%:%
+%:%300=125%:%
+%:%301=125%:%
+%:%302=125%:%
+%:%303=126%:%
+%:%304=126%:%
+%:%305=126%:%
+%:%306=126%:%
+%:%307=127%:%
+%:%322=129%:%
+%:%332=131%:%
+%:%333=131%:%
+%:%334=132%:%
+%:%335=133%:%
+%:%336=133%:%
+%:%337=134%:%
+%:%344=136%:%
+%:%354=138%:%
+%:%355=138%:%
+%:%356=139%:%
+%:%357=140%:%
+%:%358=140%:%
+%:%359=141%:%
+%:%360=142%:%
+%:%361=143%:%
+%:%368=145%:%
+%:%378=147%:%
+%:%379=147%:%
+%:%380=148%:%
+%:%381=148%:%
+%:%382=149%:%
+%:%383=149%:%
+%:%384=150%:%
+%:%385=151%:%
+%:%386=151%:%
+%:%387=152%:%
+%:%388=153%:%
+%:%389=154%:%
+%:%390=155%:%
+%:%397=157%:%
+%:%407=159%:%
+%:%408=159%:%
+%:%409=160%:%
+%:%410=160%:%
+%:%411=161%:%
+%:%412=162%:%
+%:%413=162%:%
+%:%414=163%:%
+%:%415=164%:%
+%:%416=165%:%
+%:%417=166%:%
+%:%418=166%:%
+%:%419=167%:%
+%:%420=168%:%
+%:%423=169%:%
+%:%427=169%:%
+%:%428=169%:%
+%:%429=170%:%
+%:%430=170%:%
+%:%444=173%:%
+%:%454=175%:%
+%:%455=175%:%
+%:%456=176%:%
+%:%457=176%:%
+%:%458=177%:%
+%:%459=178%:%
+%:%460=178%:%
+%:%461=179%:%
+%:%462=180%:%
+%:%463=181%:%
+%:%464=182%:%
+%:%465=182%:%
+%:%466=183%:%
+%:%469=184%:%
+%:%473=184%:%
+%:%474=184%:%
+%:%475=184%:%
+%:%489=186%:%
+%:%499=188%:%
+%:%500=188%:%
+%:%507=190%:%
+%:%517=192%:%
+%:%518=192%:%
+%:%519=193%:%
+%:%520=194%:%
+%:%521=195%:%
+%:%522=196%:%
+%:%523=196%:%
+%:%524=197%:%
+%:%525=198%:%
+%:%526=199%:%
+%:%527=199%:%
+%:%528=200%:%
+%:%531=201%:%
+%:%535=201%:%
+%:%536=201%:%
+%:%537=201%:%
+%:%551=203%:%
+%:%561=205%:%
+%:%562=205%:%
+%:%563=206%:%
+%:%564=207%:%
+%:%565=208%:%
+%:%566=209%:%
+%:%567=209%:%
+%:%568=210%:%
+%:%569=211%:%
+%:%570=212%:%
+%:%571=213%:%
+%:%572=214%:%
+%:%573=214%:%
+%:%574=215%:%
+%:%577=216%:%
+%:%581=216%:%
+%:%582=216%:%
+%:%583=216%:%
+%:%597=218%:%
+%:%607=220%:%
+%:%608=220%:%
+%:%609=221%:%
+%:%610=222%:%
+%:%611=222%:%
+%:%612=223%:%
+%:%613=224%:%
+%:%620=226%:%
+%:%630=228%:%
+%:%631=228%:%
+%:%632=229%:%
+%:%633=230%:%
+%:%634=231%:%
+%:%635=231%:%
+%:%638=232%:%
+%:%642=232%:%
+%:%643=232%:%
+%:%644=232%:%
+%:%649=232%:%
+%:%652=233%:%
+%:%653=234%:%
+%:%654=234%:%
+%:%655=235%:%
+%:%658=236%:%
+%:%662=236%:%
+%:%663=236%:%
+%:%664=236%:%
+%:%669=236%:%
+%:%674=237%:%
+%:%679=238%:%

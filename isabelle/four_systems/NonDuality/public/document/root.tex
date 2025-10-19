@@ -1,0 +1,188 @@
+\documentclass[11pt,a4paper]{article}
+
+% Isabelle document support
+\usepackage{isabelle,isabellesym}
+
+% Text + monospace quality
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{inconsolata}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% Safe code listings for inline examples in the prose
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  upquote=true,
+  frame=single,
+  breaklines=true
+}
+
+\title{Non-Duality: A Minimal Isabelle/HOL Formalization}
+\author{Matthew Scherf}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This entry presents a concise formalization of an empirically oriented
+non-dual ontology in Isabelle/HOL. The development isolates a minimal core
+comprising a unique ground (denoted \(\Omega\)), phenomena, an inseparability
+relation, and a symmetry action on appearances. Within Higher-Order Logic, we
+state conservative axioms and derive representative consequences such as the
+dependence of phenomena on the ground, the non-duplication of ground, and the
+stability of inseparability under symmetry. The theory is designed to be small,
+transparent, and reusable, providing a neutral spine that can be compared with
+neighboring non-dual formalisations (e.g.\ Daoism, Dzogchen) in the same
+technical framework.
+\end{abstract}
+
+\tableofcontents
+\bigskip
+
+\section{Introduction}
+
+Non-dual traditions often assert that appearances are not ultimately separate
+from their ground, and that the ground is unique and inexpressible by the
+categories that classify appearances. This formalization extracts a neutral,
+logically explicit fragment of such views. The aim is expository and pragmatic:
+to state a modest family of axioms in HOL, study their immediate consequences,
+and make the assumptions and inferential pathways mechanically auditable.
+
+\section{Entry Overview}
+
+The session consists of a single theory \texttt{NonDuality} importing
+\texttt{Main}. At a high level it introduces:
+\begin{itemize}
+  \item a background type of entities;
+  \item a distinguished constant \(\Omega\) intended as the unique ground;
+  \item predicates capturing appearances (\texttt{Phenomenon}) and
+        inseparability (\texttt{Inseparable});
+  \item a (group-like) action \texttt{act} for symmetry on appearances;
+  \item axioms expressing uniqueness of ground, dependence of phenomena on the
+        ground, and stability properties such as closure and preservation under
+        action.
+\end{itemize}
+The development proves elementary consequences and keeps proofs short and
+readable. It avoids interactive tool invocations in batch builds.
+
+\section{Logical Design}
+
+\subsection{Core Symbols (Sketch)}
+
+We work in classical HOL with a small signature. A typical abridged header:
+\begin{lstlisting}
+typedecl entity
+
+consts
+  Omega        :: entity
+  Phenomenon   :: "entity ⇒ bool"
+  Inseparable  :: "entity ⇒ entity ⇒ bool"
+  act          :: "('g) ⇒ entity ⇒ entity"   (* symmetry action on appearances *)
+\end{lstlisting}
+
+Nothing in the entry depends on a particular representation of the carrier for
+symmetries; the action is treated abstractly.
+
+\subsection{Axiom Sketch}
+
+The axioms are minimal and phenomenology-friendly. Representative principles:
+\begin{itemize}
+  \item \emph{Unique ground:} \(\Omega\) is the ground and there is no other
+        distinct ground entity.
+  \item \emph{Ground--appearance relation:} every phenomenon is inseparable
+        from \(\Omega\).
+  \item \emph{Closure and preservation:} the symmetry action maps phenomena to
+        phenomena and preserves inseparability with \(\Omega\).
+\end{itemize}
+The theory presents these as plain HOL formulas without requiring non-classical
+logic or additional meta-theory.
+
+\section{Illustrative Results}
+
+\paragraph{Dependence of Phenomena on the Ground.}
+Every appearance is inseparable from \(\Omega\):
+\begin{lstlisting}
+lemma phenomenon_inseparable_from_Omega:
+  assumes "Phenomenon x"
+  shows   "Inseparable x Ω"
+\end{lstlisting}
+
+\paragraph{Symmetry Preserves Non-Two.}
+Inseparability is stable under the action:
+\begin{lstlisting}
+lemma symmetry_preserves_inseparability:
+  assumes "Phenomenon x"
+  shows   "Inseparable (act g x) Ω"
+\end{lstlisting}
+
+\paragraph{No Duplication of Ground.}
+There is no second ground distinct from \(\Omega\):
+\begin{lstlisting}
+lemma ground_is_unique:
+  assumes "Inseparable Ω y" "Inseparable y Ω"
+  shows   "y = Ω"
+\end{lstlisting}
+
+These statements serve as precise surrogates for familiar non-dual claims.
+They are proven under the minimal axioms and can be strengthened or varied by
+altering the axiomatic core.
+
+\section{Methods and Sanity Checks}
+
+Proofs prefer \texttt{auto}, \texttt{blast}, and \texttt{metis} and avoid
+non-deterministic or long-running tools in batch mode. During development,
+finite-scope model exploration (via Nitpick) and proof search (via Sledgehammer)
+were used interactively to guide axiom tuning and lemma selection; the final
+submitted theory contains only stable proofs.%
+\footnote{Typical interactive settings: small cardinalities and short timeouts
+for model exploration; proofs subsequently recorded with \texttt{metis} or
+\texttt{blast}.}
+
+\section{Relation to Prior Work}
+
+This entry complements other small, reusable non-dual formalisations (e.g.\
+Daoism, Dzogchen) by offering a secular, ontology-first presentation focused on
+a unique ground \(\Omega\) and an inseparability relation. Placing these within
+the same HOL substrate supports side-by-side comparison and future unification
+work.
+
+\section{Limitations and Future Work}
+
+The axioms intentionally abstract away from interpretive nuance. Natural
+extensions include:
+\begin{itemize}
+  \item enriching \texttt{Inseparable} with modal or temporal structure;
+  \item constraining \texttt{act} via group laws and equivariance properties;
+  \item relating the core to epistemic surrogates of direct knowing;
+  \item comparing conservativity across neighboring entries within a shared
+        interface theory.
+\end{itemize}
+
+\section{How to Build}
+
+From the session directory:
+\begin{lstlisting}
+isabelle build -c -o document=pdf NonDuality
+\end{lstlisting}
+To emit the PDF alongside sources:
+\begin{lstlisting}
+isabelle build -c -D . -o document=pdf -o document_output=public NonDuality
+\end{lstlisting}
+
+\bigskip
+
+% ---------------------------------------------------------------------------
+
+\input{session}
+
+\end{document}
+\endinput
+%:%file=~/Documents/GitHub/AFP/isabelle/four_systems/NonDuality/document/root.tex%:%

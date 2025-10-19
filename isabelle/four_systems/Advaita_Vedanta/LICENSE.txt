@@ -1,0 +1,6 @@
+Dual-licensed:
+
+- Documentation (PDF and comments): Creative Commons Attribution 4.0 International (CC BY 4.0)
+- Isabelle/HOL theory code: BSD 3-Clause License
+
+You may use the code under the BSD-3-Clause terms; documentation text under CC BY 4.0.

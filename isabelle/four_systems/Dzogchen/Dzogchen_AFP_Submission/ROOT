@@ -1,0 +1,7 @@
+session "Dzogchen" (AFP) = HOL +
+  options [document = pdf]
+  theories
+    Dzogchen
+document_files (in "document")
+  "root.tex"
+

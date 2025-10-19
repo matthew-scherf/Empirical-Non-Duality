@@ -1,0 +1,188 @@
+\documentclass[11pt,a4paper]{article}
+
+% Isabelle document support
+\usepackage{isabelle,isabellesym}
+
+% Text + monospace quality
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{inconsolata}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% Safe code listings for inline examples in the prose
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  upquote=true,
+  frame=single,
+  breaklines=true
+}
+
+\title{Advaita Vedānta: A Formalization in Isabelle/HOL}
+\author{Matthew Scherf}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This entry presents a compact Isabelle/HOL formalization of a minimalist core of
+Advaita Vedānta. The development isolates neutral higher\=/order predicates for
+awareness, appearance, and inseparability, together with a distinguished ground
+corresponding to Brahman. Within classical HOL we axiomatize non\=/duality
+(\emph{Atman = Brahman}) via a small collection of conservative assumptions and
+derive representative consequences: uniqueness of the ground, dependence of
+appearances on awareness, non\=/reification of awareness, and stability
+properties. Proofs are short and deterministic, suitable for AFP batch builds,
+and the theory is designed to be reusable alongside related non\=/dual
+formalizations.
+\end{abstract}
+
+\tableofcontents
+\bigskip
+
+\section{Introduction}
+
+Advaita Vedānta asserts that the ultimate reality (Brahman) and the innermost
+self (Ātman) are not two. This entry extracts a modest, logically explicit core
+of that view that can be checked mechanically in Isabelle/HOL. The purpose is
+expository and foundational: specify assumptions with mathematical clarity,
+study immediate consequences, and provide a small, auditable scaffold for
+comparison with neighboring non\=/dual systems.
+
+\section{Entry Overview}
+
+The session consists of a single theory \texttt{Advaita\_Vedanta} importing
+\texttt{Main}. At a high level it introduces:
+\begin{itemize}
+  \item a background type of entities;
+  \item a distinguished constant intended as the ground (Brahman);
+  \item predicates for awareness, appearance (phenomenal content), and
+        inseparability;
+  \item optional structure such as a symmetry/action on appearances;
+  \item axioms encoding uniqueness of the ground, self\=/luminosity of
+        awareness, and the non\=/duality schema.
+\end{itemize}
+The formalization emphasizes transparency over expressiveness and keeps proofs
+short (\texttt{auto}, \texttt{blast}, \texttt{metis}).
+
+\section{Logical Design}
+
+\subsection{Core Symbols (Sketch)}
+
+We work in classical HOL with a small signature. A typical abridged header:
+\begin{lstlisting}
+typedecl entity
+
+consts
+  Brahman     :: entity
+  Awareness   :: "entity ⇒ bool"      (* Atman-as-awareness surrogate *)
+  Appearance  :: "entity ⇒ bool"      (* phenomenal content / maya *)
+  Inseparable :: "entity ⇒ entity ⇒ bool"
+  act         :: "('g) ⇒ entity ⇒ entity"   (* optional symmetry on appearances *)
+\end{lstlisting}
+
+\subsection{Axiom Sketch}
+
+The axioms are intentionally minimal and phenomenology-friendly:
+\begin{itemize}
+  \item \emph{Uniqueness of ground:} Brahman is the unique ground.
+  \item \emph{Self\=/luminosity / non\=/reification:} awareness is not an appearance.
+  \item \emph{Non\=/duality schema:} appearances are inseparable from the ground
+        as known in awareness (a neutral surrogate for \emph{Atman = Brahman}).
+  \item \emph{Dependence of appearances:} every appearance is inseparable from
+        Brahman.
+  \item \emph{Preservation:} optional closure/preservation of inseparability
+        under symmetry/action on appearances.
+\end{itemize}
+All are stated as plain HOL formulas; no non\=/classical meta\=/logic is required.
+
+\section{Illustrative Results}
+
+\paragraph{Appearance Depends on the Ground.}
+Every appearance is inseparable from Brahman:
+\begin{lstlisting}
+lemma appearance_inseparable_from_brahman:
+  assumes "Appearance x"
+  shows   "Inseparable x Brahman"
+\end{lstlisting}
+
+\paragraph{Awareness Is Not an Appearance.}
+Non\=/reification of awareness:
+\begin{lstlisting}
+lemma awareness_not_appearance:
+  assumes "Awareness a"
+  shows   "¬ Appearance a"
+\end{lstlisting}
+
+\paragraph{Symmetry Preserves Non\=/Duality.}
+Optional stability under action:
+\begin{lstlisting}
+lemma symmetry_preserves_inseparability:
+  assumes "Appearance x"
+  shows   "Inseparable (act g x) Brahman"
+\end{lstlisting}
+
+\paragraph{Uniqueness of the Ground.}
+No second ground distinct from Brahman:
+\begin{lstlisting}
+lemma ground_unique:
+  assumes "Inseparable Brahman y" "Inseparable y Brahman"
+  shows   "y = Brahman"
+\end{lstlisting}
+
+The proofs in the entry instantiate these sketches with the specific axioms in
+\texttt{Advaita\_Vedanta.thy} and close with standard methods (\texttt{blast},
+\texttt{metis}, or \texttt{auto}); no interactive tools run during batch builds.
+
+\section{Methods and Sanity Checks}
+
+During development, model exploration (e.g.\ Nitpick) and proof search
+(Sledgehammer) may be used interactively to tune axioms and craft short proofs,
+but the submitted theory contains only deterministic proofs suitable for AFP.
+Any such exploratory settings are documented in comments and omitted from batch
+invocation.
+
+\section{Relation to Prior Work}
+
+This entry complements small, reusable formalizations of non\=/dual frameworks
+(e.g.\ secular non\=/duality, Daoism, Dzogchen) by providing an Advaita\=/specific
+core within the same HOL substrate. The shared setting enables side\=/by\=/side
+comparison and potential unification via interface theories.
+
+\section{Limitations and Future Work}
+
+The axioms aim for faithfulness and neutrality but necessarily abstract from the
+full exegetical and soteriological context. Natural extensions include:
+\begin{itemize}
+  \item refining the \texttt{Inseparable} relation toward epistemic or modal
+        accounts of \emph{being known};
+  \item pinning down algebraic laws for \texttt{act} and studying equivariance;
+  \item conservative embeddings into richer libraries for cross\=/domain
+        comparisons.
+\end{itemize}
+
+\section{How to Build}
+
+From the session directory:
+\begin{lstlisting}
+isabelle build -c -o document=pdf Advaita_Vedanta
+\end{lstlisting}
+To place the PDF alongside sources:
+\begin{lstlisting}
+isabelle build -c -D . -o document=pdf -o document_output=public Advaita_Vedanta
+\end{lstlisting}
+
+\bigskip
+
+% ---------------------------------------------------------------------------
+
+\input{session}
+
+\end{document}

@@ -1,0 +1,9 @@
+chapter AFP
+
+session "Advaita_Vedanta" (AFP) = HOL +
+  options [document = pdf, timeout = 1800]
+  directories "Advaita_Vedanta"
+  theories
+    Advaita_Vedanta
+  document_files (in "document")
+    "root.tex"
