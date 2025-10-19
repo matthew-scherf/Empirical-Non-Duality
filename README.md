@@ -178,65 +178,51 @@ Each theorem is machine-verified and follows necessarily from axioms. The proof 
 
 ## Relationship to Physics and Cognitive Science
 
-### Quantum Foundations
+## Quantum Foundations
 
-The substrate-presentation structure parallels interpretations of quantum mechanics where the wave function or quantum field is fundamental and particles are excitations or modes. The substrate resembles the quantum vacuum or Hilbert space from which particle states arise. Phenomena presenting the substrate resemble particle states as representations of underlying field.
+The substrate-presentation structure parallels interpretations of quantum mechanics where the wave function or quantum field is fundamental and particles are excitations or modes, and the substrate resembles the quantum vacuum or Hilbert space from which particle states arise. Phenomena presenting the substrate resemble particle states as representations of underlying field.
 
-The gauge invariance axioms directly parallel gauge theories in physics. Different gauge choices (like different coordinate systems in spacetime) represent the same underlying reality. The formalization proves that gauge transformations preserve the substrate-presentation structure, exactly as gauge transformations in physics preserve physical content.
+The gauge invariance axioms directly parallel gauge theories in physics, where different gauge choices like different coordinate systems in spacetime represent the same underlying reality, and the formalization proves that gauge transformations preserve the substrate-presentation structure exactly as gauge transformations in physics preserve physical content.
 
-The measurement problem in quantum mechanics (how does definite outcome arise from superposition) becomes less mysterious in this framework. Measurement is not collapse of wave function but rather a specific mode of presentation where the substrate appears as definite phenomenon within a reference frame. Different measurement contexts are different modes of presentation, not different ontological situations.
+The measurement problem in quantum mechanics, how does definite outcome arise from superposition, becomes less mysterious in this framework because measurement is not collapse of wave function but rather a specific mode of presentation where the substrate appears as definite phenomenon within a reference frame. Different measurement contexts are different modes of presentation, not different ontological situations.
 
-### Relativity and Spacetime
+## Relativity and Spacetime
 
-The axioms establish that spacetime coordinates apply only to phenomena. The substrate itself has no location or temporal position. This aligns with approaches in quantum gravity (like loop quantum gravity or causal set theory) where spacetime is emergent from more fundamental pre-geometric structure.
+The axioms establish that spacetime coordinates apply only to phenomena and the substrate itself has no location or temporal position, which aligns with approaches in quantum gravity like loop quantum gravity or causal set theory where spacetime is emergent from more fundamental pre-geometric structure.
 
-The frame-dependence formalized in the gauge axioms parallels reference frame dependence in special relativity. What counts as simultaneous or spatially separated depends on choice of frame. The formalization shows this frame-dependence is compatible with underlying non-dual reality.
+The frame-dependence formalized in the gauge axioms parallels reference frame dependence in special relativity, where what counts as simultaneous or spatially separated depends on choice of frame, and the formalization shows this frame-dependence is compatible with underlying non-dual reality.
 
-Block universe interpretations in relativity, where all times exist equally, find natural expression in this framework. The substrate is atemporal. Temporal ordering is an emergent structure on phenomenal presentations. Past, present, and future are perspectival distinctions within presentation rather than fundamental divisions.
+Block universe interpretations in relativity, where all times exist equally, find natural expression in this framework because the substrate is atemporal and temporal ordering is an emergent structure on phenomenal presentations. Past and present and future are perspectival distinctions within presentation rather than fundamental divisions.
 
-### Cognitive Science and Consciousness
+## Cognitive Science and Consciousness
 
-The hard problem of consciousness (how does subjective experience arise from objective matter) dissolves if we reverse the explanatory order. Consciousness is not produced by neural activity. Neural activity is phenomenal presentation of substrate which is itself awareness.
+The hard problem of consciousness, how does subjective experience arise from objective matter, dissolves if we reverse the explanatory order. Consciousness is not produced by neural activity but neural activity is phenomenal presentation of substrate which is itself awareness.
 
-This aligns with integrated information theory approaches where consciousness is fundamental and physical processes are aspects of conscious experience rather than causes of it. The formalization makes this logically precise and proves consistency.
+This aligns with integrated information theory approaches where consciousness is fundamental and physical processes are aspects of conscious experience rather than causes of it, and the formalization makes this logically precise and proves consistency.
 
-Predictive processing frameworks in cognitive science, where perception is active construction rather than passive reception, fit naturally here. Phenomenal experience is presentation of substrate shaped by conceptual frameworks and prior expectations. Perception is substrate presenting itself through particular modes.
+Predictive processing frameworks in cognitive science, where perception is active construction rather than passive reception, fit naturally here because phenomenal experience is presentation of substrate shaped by conceptual frameworks and prior expectations. Perception is substrate presenting itself through particular modes.
 
-The binding problem (how does brain unify diverse processing streams into coherent experience) becomes tractable. Unity is not achieved by binding separate elements. Unity is the substrate itself. Apparent diversity is multiple modes of presentation rather than genuinely separate processes requiring integration.
+The binding problem, how does brain unify diverse processing streams into coherent experience, becomes tractable because unity is not achieved by binding separate elements but unity is the substrate itself. Apparent diversity is multiple modes of presentation rather than genuinely separate processes requiring integration.
 
 ## Philosophical Implications
 
-### Ontological Parsimony
+The formalization achieves maximum parsimony, an ontology containing exactly one fundamental entity, the substrate, and one fundamental relation, presentation, where everything else including causality and spacetime and information and concepts is structure within phenomenal presentation.
 
-The formalization achieves maximum parsimony. The ontology contains exactly one fundamental entity (the substrate) and one fundamental relation (presentation). Everything else (causality, spacetime, information, concepts) is structure within phenomenal presentation.
+This is simpler than substance dualism which posits mind and matter as separate substances, simpler than materialism which struggles to account for consciousness, and simpler than idealism which struggles to account for intersubjective agreement and physical law. Occam's razor favors simpler theories when they are equally explanatory, and the formalization proves the simple non-dual ontology is internally consistent. Whether it is explanatorily adequate requires empirical investigation, but logical coherence is established.
 
-This is simpler than substance dualism (which posits mind and matter as separate substances), simpler than materialism (which struggles to account for consciousness), and simpler than idealism (which struggles to account for intersubjective agreement and physical law).
+Nothing in the formalization contradicts empirical observation. It contradicts only metaphysical interpretations of observations, and the axioms are compatible with all experimental results in physics and cognitive science.
 
-Occam's razor favors simpler theories when they are equally explanatory. The formalization proves the simple non-dual ontology is internally consistent. Whether it is explanatorily adequate requires empirical investigation, but logical coherence is established.
+Quantum experiments and relativity experiments and neuroscience findings about neural correlates of consciousness all remain valid as phenomenal regularities, and the formalization reinterprets their ontological status, presentation of substrate rather than independent substance, without denying the phenomena themselves. This makes the theory empirically adequate in the sense that it accounts for all observations while offering simpler metaphysical foundation. It is not falsifiable by experiment because any experimental result can be interpreted within the framework, but this is true of all ontological theories, and empirical data underdetermines ontology. The choice between frameworks is made on grounds of coherence and parsimony and explanatory unification.
 
-### Empirical Adequacy
+The non-appropriation axioms establish that ownership is conventional, which has implications for distributive justice and property rights and resource allocation. If ownership lacks ultimate metaphysical foundation then claims about natural rights to property become less tenable, and ownership arrangements are justified pragmatically by their consequences rather than by tracking some fundamental fact.
 
-Nothing in the formalization contradicts empirical observation. It contradicts only metaphysical interpretations of observations. The axioms are compatible with all experimental results in physics and cognitive science.
+The inseparability of all phenomena from one substrate suggests an ethics of recognition similar to contemplative approaches, where harm to others is harm to presentations of the substrate that is one's own nature and compassion arises naturally from recognizing no ultimate separation exists. However the formalization does not determine particular ethical conclusions. It provides metaphysical foundation but leaves open how to navigate conventional reality, and the axioms establish that distinctions are real at the phenomenal level even while unified at substrate level. Ethics operates in the phenomenal domain where distinctions matter practically even if not ultimately.
 
-Quantum experiments, relativity experiments, neuroscience findings about neural correlates of consciousness, all remain valid as phenomenal regularities. The formalization reinterprets their ontological status (presentation of substrate rather than independent substance) without denying the phenomena themselves.
+The formalization suggests science can investigate substrate indirectly through study of phenomenal presentations and their patterns, where physical laws describe regularities in how substrate presents itself and these laws are discovered empirically but reflect the inherent structure of presentation.
 
-This makes the theory empirically adequate in the sense that it accounts for all observations while offering simpler metaphysical foundation. It is not falsifiable by experiment (because any experimental result can be interpreted within the framework) but this is true of all ontological theories. Empirical data underdetermines ontology. The choice between frameworks is made on grounds of coherence, parsimony, and explanatory unification.
+This resolves potential tension between scientific realism and non-dualism because scientific theories are not simply conventional but track real structure in presentation, and atoms and fields and spacetime are phenomenal realities even though they are presentations of substrate rather than self-standing substances.
 
-### Ethics and Value
-
-The non-appropriation axioms establish that ownership is conventional. This has implications for distributive justice, property rights, and resource allocation. If ownership lacks ultimate metaphysical foundation, claims about natural rights to property become less tenable. Ownership arrangements are justified pragmatically by their consequences rather than by tracking some fundamental fact.
-
-The inseparability of all phenomena from one substrate suggests an ethics of recognition similar to contemplative approaches. Harm to others is harm to presentations of the substrate that is one's own nature. Compassion arises naturally from recognizing no ultimate separation exists.
-
-However, the formalization does not determine particular ethical conclusions. It provides metaphysical foundation but leaves open how to navigate conventional reality. The axioms establish that distinctions are real at the phenomenal level even while unified at substrate level. Ethics operates in the phenomenal domain where distinctions matter practically even if not ultimately.
-
-### Scientific Methodology
-
-The formalization suggests science can investigate substrate indirectly through study of phenomenal presentations and their patterns. Physical laws describe regularities in how substrate presents itself. These laws are discovered empirically but reflect the inherent structure of presentation.
-
-This resolves potential tension between scientific realism and non-dualism. Scientific theories are not simply conventional but track real structure in presentation. Atoms, fields, spacetime are phenomenal realities even though they are presentations of substrate rather than self-standing substances.
-
-The framework also suggests limits to scientific knowledge. Science investigates phenomenal structure and cannot access substrate directly because every act of investigation is itself phenomenal. The substrate is the condition for investigation rather than possible object of investigation. This is not mysticism but recognition of scope. Science can be complete regarding phenomenal structure while remaining silent about substrate.
+The framework also suggests limits to scientific knowledge. Science investigates phenomenal structure and cannot access substrate directly because every act of investigation is itself phenomenal, and the substrate is the condition for investigation rather than possible object of investigation. This is not mysticism but recognition of scope, and science can be complete regarding phenomenal structure while remaining silent about substrate.
 
 ## Citation
 
