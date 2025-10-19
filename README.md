@@ -13,6 +13,8 @@ This project completes a quartet of non-dual formalizations spanning religious t
 
 ---
 
+## [Refutation Guide](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/blob/main/docs/refutation.md)
+
 ## Table of Contents
 
 - [Prove It](#prove-it)
