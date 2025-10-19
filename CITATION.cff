@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it as below."
+type: software
+title: "Formal Axiomatization of Empirical Non-Duality: Machine-Verified Scientific Framework"
+abstract: "Complete formal axiomatization of non-dual metaphysics using scientifically rigorous terminology in Isabelle/HOL 2025. Proves consistency of substrate ontology with phenomenal presentations, establishing non-dualism through empirical concepts like gauge invariance, emergent spacetime, and information theory. Fourth in a series completing the contemplative-scientific bridge."
+authors:
+  - family-names: "Scherf"
+    given-names: "Matthew"
+repository-code: "https://github.com/matthew-scherf/Empirical-NonDuality"
+keywords:
+  - non-dualism
+  - substrate ontology
+  - formal verification
+  - Isabelle/HOL
+  - scientific metaphysics
+  - gauge theory
+  - emergent spacetime
+  - theorem proving
+  - formal logic
+  - empirical philosophy
+  - consciousness studies
+date-released: 2025-10-19
+version: "1.0.0"
+license: 
+  - BSD-3-Clause
+  - CC-BY-4.0
+doi: "10.5281/zenodo.17388701"
+references:
+  - type: software
+    title: "Formal Axiomatization of Advaita Vedanta"
+    authors:
+      - family-names: "Scherf"
+        given-names: "Matthew"
+    year: 2025
+    repository-code: "https://github.com/matthew-scherf/Only-One"
+  - type: software
+    title: "Formal Axiomatization of Daoism"
+    authors:
+      - family-names: "Scherf"
+        given-names: "Matthew"
+    year: 2025
+    repository-code: "https://github.com/matthew-scherf/Daoism"
+  - type: software
+    title: "Formal Axiomatization of Dzogchen"
+    authors:
+      - family-names: "Scherf"
+        given-names: "Matthew"
+    year: 2025
+    repository-code: "https://github.com/matthew-scherf/Dzogchen"
