@@ -1,4 +1,4 @@
-session NonDuality = HOL +
+session The_Unique_Ontic_Substrate = HOL +
   options [browser_info = true, document = pdf, document_output = "document"]
   directories "theory"
-  theories NonDuality
+  theories The_Unique_Ontic_Substrate
