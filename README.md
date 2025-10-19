@@ -14,7 +14,7 @@ This project completes a quartet of non-dual formalizations spanning religious t
 
 ## Table of Contents
 
-- [What This Proves](#what-this-proves)
+- [Prove It](#prove-it)
 - [The Central Result](#the-central-result)
 - [Why Scientific Terminology Matters](#why-scientific-terminology-matters)
 - [Bridging Contemplation and Science](#bridging-contemplation-and-science)
@@ -28,50 +28,35 @@ This project completes a quartet of non-dual formalizations spanning religious t
 
 ---
 
-## What This Proves
+## Prove It
 
-The formalization establishes through mechanical verification that a non-dual ontology is internally consistent when expressed in scientifically rigorous terms. Using minimal axioms about a unique substrate and its phenomenal presentations, the system proves theorems about causality, spacetime, information, and emergent properties without invoking religious concepts or supernatural claims.
+The formalization establishes through mechanical verification that a non-dual ontology is internally consistent when expressed in scientifically rigorous terms, using minimal axioms about a unique substrate and its phenomenal presentations to prove theorems about causality and spacetime and information and emergent properties without invoking religious concepts or supernatural claims.
 
-The core claims verified through proof include the following. There exists exactly one ontic substrate (Ω) from which all phenomena arise as presentations or modes. This substrate is not itself phenomenal. All phenomenal entities are inseparable from the substrate in the precise sense that each phenomenon is a presentation of the substrate. Causality operates only at the phenomenal level and does not apply to the substrate itself. Spacetime coordinates apply only to phenomena, not to the substrate, making spacetime a representational structure rather than fundamental reality. Phenomena lack intrinsic essence independent of the substrate. Information and time are emergent properties of phenomenal presentations rather than fundamental features of the substrate.
+The core claims verified through proof include the following. There exists exactly one ontic substrate from which all phenomena arise as presentations or modes, and this substrate is not itself phenomenal. All phenomenal entities are inseparable from the substrate in the precise sense that each phenomenon is a presentation of the substrate, and causality operates only at the phenomenal level and does not apply to the substrate itself. Spacetime coordinates apply only to phenomena, not to the substrate, making spacetime a representational structure rather than fundamental reality. Phenomena lack intrinsic essence independent of the substrate, and information and time are emergent properties of phenomenal presentations rather than fundamental features of the substrate.
 
 These are proven theorems following necessarily from stated axioms. The verification software confirms logical consistency. This is not religious doctrine but mathematical structure compatible with empirical observation and scientific methodology.
 
-## The Central Result
+The formalization proves non-duality as inseparability of phenomena from substrate, stating that for any phenomenon, that phenomenon is inseparable from the unique substrate, where inseparability is defined precisely as the relation holding when the phenomenon is a presentation of the substrate. The theorem follows from the axioms that all phenomena present the substrate and that exactly one substrate exists. This is not a vague mystical claim but a rigorous logical result, and given the axioms about presentation and uniqueness, every phenomenon necessarily stands in the inseparability relation to the substrate. The formalization makes precise what contemplative traditions describe poetically.
 
-The formalization proves non-duality as inseparability of phenomena from substrate.
+## Terminology
 
-```isabelle
-theorem Nonduality:
-  "∀p. Phenomenon p → Inseparable p Ω"
-```
+The contemplative traditions use culturally-specific religious language, terms like Brahman and Dao and rigpa embedded in particular historical and cultural contexts, and this creates barriers for scientists and secular philosophers who might dismiss non-dualism as religious metaphysics irrelevant to empirical inquiry.
 
-This states that for any phenomenon p, that phenomenon is inseparable from the unique substrate Ω. Inseparability is defined precisely as the relation holding when the phenomenon is a presentation of the substrate. The theorem follows from the axioms that all phenomena present the substrate and that exactly one substrate exists.
+The present formalization translates non-dual structure into neutral scientific terminology. Instead of Brahman we have substrate, instead of maya we have phenomenal presentation, instead of recognition we have coherence between levels, and the logical structure remains identical but the language becomes accessible to empirically-minded investigators. This matters because it reveals that non-dualism is not essentially religious, that the same formal structure describing Advaita metaphysics also describes a substrate ontology compatible with modern physics and cognitive science. When you strip away cultural and religious elements what remains is a minimal ontology with remarkable explanatory power.
 
-This is not a vague mystical claim but a rigorous logical result. Given the axioms about presentation and uniqueness, every phenomenon necessarily stands in the inseparability relation to the substrate. The formalization makes precise what contemplative traditions describe poetically.
+The choice of terminology also reflects genuine parallels with scientific concepts. The substrate-presentation relation parallels the relationship between quantum fields and particle excitations, gauge invariance in physics, where different coordinate systems describe the same reality, directly parallels the gauge axioms in the formalization, and emergence of time from more fundamental atemporal structure appears in quantum gravity research. These are not superficial analogies. The formal structure genuinely captures patterns appearing in both contemplative investigation and scientific research, and the formalization proves that these patterns are logically coherent and mutually consistent.
 
-## Why Scientific Terminology Matters
+## Bridging
 
-The contemplative traditions (Advaita, Daoism, Dzogchen) use culturally-specific religious language. Brahman, Dao, Ground, rigpa are terms embedded in particular historical and cultural contexts. This creates barriers for scientists and secular philosophers who might dismiss non-dualism as religious metaphysics irrelevant to empirical inquiry.
+This is the fourth machine-verified formalization of non-dual philosophy. The first three used traditional religious terminology, this fourth uses scientific language, and the fact that all four formalize successfully and reveal structural similarities demonstrates that non-dualism transcends the contemplative-scientific divide.
 
-The present formalization translates non-dual structure into neutral scientific terminology. Instead of Brahman we have substrate. Instead of maya or lila we have phenomenal presentation. Instead of recognition we have coherence between levels. The logical structure remains identical but the language becomes accessible to empirically-minded investigators.
+Contemplative traditions discovered non-dual structure through systematic investigation of consciousness, developing precise methodologies for recognizing the substrate nature of awareness, and their descriptions use the language available in their cultural contexts. Modern science investigates the same reality from a different angle, physics studying the structure of spacetime and matter-energy while cognitive science studies the structure of experience and cognition, and both encounter puzzles that resist solution within standard dualist frameworks, puzzles like the hard problem of consciousness and the measurement problem in quantum mechanics and the nature of time.
 
-This matters because it reveals that non-dualism is not essentially religious. The same formal structure that describes Advaita metaphysics also describes a substrate ontology compatible with modern physics and cognitive science. When you strip away cultural and religious elements, what remains is a minimal ontology with remarkable explanatory power.
+The formalization suggests these puzzles might dissolve in a non-dual framework. If phenomena are presentations of a substrate rather than independent entities the hard problem vanishes because consciousness is the substrate itself rather than an emergent property, and if spacetime is representational rather than fundamental then quantum measurement becomes less mysterious because we no longer demand that fundamental reality conform to spatial-temporal structure. If time is emergent from atemporal substrate, temporal paradoxes in physics find resolution.
 
-The choice of terminology also reflects genuine parallels with scientific concepts. The substrate-presentation relation parallels the relationship between quantum fields and particle excitations. Gauge invariance in physics (where different coordinate systems describe the same reality) directly parallels the gauge axioms in the formalization. Emergence of time from more fundamental atemporal structure appears in quantum gravity research. Information as a non-reifying quantity relates to information-theoretic approaches in physics.
+The four formalizations together establish that non-dualism is framework-agnostic, that religious language and scientific language describe the same logical structure, and this structure admits rigorous proof and survives mechanical verification regardless of terminology.
 
-These are not superficial analogies. The formal structure genuinely captures patterns appearing in both contemplative investigation and scientific research. The formalization proves that these patterns are logically coherent and mutually consistent.
-
-## Bridging Contemplation and Science
-
-This is the fourth machine-verified formalization of non-dual philosophy. The first three (Advaita, Daoism, Dzogchen) used traditional religious terminology. This fourth uses scientific language. The fact that all four formalize successfully and reveal structural similarities demonstrates that non-dualism transcends the contemplative-scientific divide.
-
-Contemplative traditions discovered non-dual structure through systematic investigation of consciousness. They developed precise methodologies (meditation, inquiry, direct pointing) for recognizing the substrate nature of awareness. Their descriptions use the language available in their cultural contexts (Indian philosophy, Chinese naturalism, Tibetan Buddhism).
-
-Modern science investigates the same reality from a different angle. Physics studies the structure of spacetime and matter-energy. Cognitive science studies the structure of experience and cognition. Both encounter puzzles (the hard problem of consciousness, the measurement problem in quantum mechanics, the nature of time) that resist solution within standard dualist frameworks.
-
-The formalization suggests these puzzles might dissolve in a non-dual framework. If phenomena are presentations of a substrate rather than independent entities, the hard problem vanishes because consciousness is the substrate itself rather than an emergent property. If spacetime is representational rather than fundamental, quantum measurement becomes less mysterious because we no longer demand that fundamental reality conform to spatial-temporal structure. If time is emergent from atemporal substrate, temporal paradoxes in physics find resolution.
-
-The four formalizations together establish that non-dualism is framework-agnostic. Religious language (Brahman, Dao, Ground) and scientific language (substrate, presentation, emergence) describe the same logical structure. This structure admits rigorous proof and survives mechanical verification regardless of terminology.
+---
 
 ## How to Verify
 
