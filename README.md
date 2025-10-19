@@ -1,5 +1,4 @@
 # The Unique Ontic Substrate **Ω**
-∃!s. Substrate s ∧ ∀p. Phenomenon p → Presents p s
 
 **A machine-verified axiomatization of non-dual metaphysics in Isabelle/HOL using scientific terminology and empirically grounded concepts**
 
