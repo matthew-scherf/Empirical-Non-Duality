@@ -13,6 +13,11 @@ This formalization represents a scientifically-oriented approach to non-dual met
 This project completes a quartet of non-dual formalizations spanning religious traditions (Hindu, Daoist, Buddhist) and scientific frameworks. Together these verifications establish that non-dualism is not culturally bound mysticism but rather a logically coherent structure appearing independently across contemplative traditions and empirical investigation. The convergence under machine verification suggests non-dual awareness reflects fundamental features of reality accessible through both meditation and scientific inquiry.
 
 ---
+Other work:
+- [Advaita Vedanta](https://github.com/matthew-scherf/Only-One/) - Machine-verified Advaita
+- [Daoism](https://github.com/matthew-scherf/Uncarved-Block/) - Machine-verified Daosim
+- [Dzogchen](https://github.com/matthew-scherf/Great-Perfection/) - Machine-verified Dzogchen
+---
 
 ## [Refutation Guide](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/blob/main/docs/refutation.md)
 
