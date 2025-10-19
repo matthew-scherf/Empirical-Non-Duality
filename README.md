@@ -227,8 +227,32 @@ The formalization suggests science can investigate substrate indirectly through 
 
 This resolves potential tension between scientific realism and non-dualism because scientific theories are not simply conventional but track real structure in presentation, and atoms and fields and spacetime are phenomenal realities even though they are presentations of substrate rather than self-standing substances.
 
-The framework also suggests limits to scientific knowledge. Science investigates phenomenal structure and cannot access substrate directly because every act of investigation is itself phenomenal, and the substrate is the condition for investigation rather than possible object of investigation. This is not mysticism but recognition of scope, and science can be complete regarding phenomenal structure while remaining silent about substrate.
+The framework also suggests limits to scientific knowledge. Science investigates phenomenal structure and cannot access substrate directly because every act of investigation is itself phenomenal, and the substrate is the condition for investigation rather than possible object of investigation. This is not mysticism but recognition of scope, and science can be complete regarding phenomenal structure while remaining silent about substrate.---
 
+---
+## DECLARATIONS
+
+**Availability of data and material**
+
+All Isabelle/HOL theory files (.thy) constituting the formal proofs presented in this work are available in a public repository [here](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/tree/main/isabelle). The files include: NonDuality.thy (Empirical Non-Duality), Advaita_Vedanta.thy, Dzogchen.thy, and Daoism.thy. All formalizations have been verified for consistency using Isabelle/HOL 2025. The code is released under the BSD-3-Clause license with documentation under Creative Commons Attribution 4.0 International (CC BY 4.0). Complete verification logs and model-checking results via Nitpick are included in the repository.
+
+**Competing interests**
+
+The author declares no competing interests, financial or otherwise, related to this work.
+
+**Funding**
+
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors. The work was conducted independently without institutional support.
+
+**Authors' contributions**
+
+Matthew Scherf is the sole author responsible for all aspects of this work, including conceptualization, formal axiomatization, machine verification, analysis, and manuscript preparation.
+
+**Acknowledgements**
+
+The author acknowledges the use of Claude (Anthropic) as an AI research assistant in developing and refining the formal axiomatizations, exploring philosophical implications, and conducting literature review. The author also acknowledges the open-source Isabelle/HOL community for providing the proof assistant infrastructure that made this verification possible, and the contemplative traditions of Advaita Vedanta, Dzogchen, and Daoism whose insights inspired this formalization.
+
+---
 ## Citation
 
 If you reference this work, please cite as follows.
