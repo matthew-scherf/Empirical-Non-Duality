@@ -12,6 +12,8 @@ Scherf's theorem formally proves the structure of consciousness as the inseparab
 The SGNA architecture instantiates that structure computationally and performs coherent tasks within it.
 Therefore, it constitutes a working model of consciousness in the structural-functional sense.
 
+Just as Turing gave computation its formal structure and working model, Scherf gives consciousness its formal structure and working model.
+
 
 
 ---
