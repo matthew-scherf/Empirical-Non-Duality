@@ -1,5 +1,5 @@
 # The Unique Ontic Substrate: A Practical Guide for Everyday Life
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 Imagine a computer program that proves, with absolute mathematical certainty, something that mystics and contemplatives have been saying for thousands of years, that everything you experience, everything you see and touch and think about, isn't actually separate from a deeper reality underneath it all. This isn't philosophy or religion anymore, it's formal mathematics, verified by machines, proven to be logically consistent.
