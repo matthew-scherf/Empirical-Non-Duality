@@ -1,6 +1,6 @@
 
 # The Unique Ontic Substrate (Ω): Implications for Artificial Intelligence and Machine Consciousness
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 The machine-verified Isabelle/HOL formalization (DOI: 10.5281/zenodo.17388701) presents the first completely formal axiomatization of non-dual ontology, establishing through rigorous proof that all phenomena are inseparable presentations of a unique substrate Ω. While the formalization makes no explicit claims about artificial intelligence or consciousness, its logical structure has profound implications for foundational questions in AI research: the nature of machine consciousness, the ontological status of artificial intelligence systems, the relationship between computational substrates and emergent cognition, and whether artificial general intelligence constitutes genuine understanding or mere simulation.
