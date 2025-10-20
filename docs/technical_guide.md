@@ -1,6 +1,6 @@
 
 # Technical Guide to The_Unique_Ontic_Substrate.thy
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 This technical guide provides comprehensive documentation for the Isabelle/HOL formalization of Empirical Non-Duality contained in `The_Unique_Ontic_Substrate.thy`. The guide explains the formal structure, verification methodology, extension mechanisms, and technical details necessary for understanding, verifying, and potentially extending the formalization. This document assumes basic familiarity with formal logic and theorem proving but provides explanations accessible to those new to Isabelle/HOL.
