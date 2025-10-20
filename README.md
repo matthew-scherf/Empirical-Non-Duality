@@ -8,9 +8,9 @@
 
 [Submitted to Isabelle AFP](https://www.isa-afp.org/webapp/submission/?id=2025-10-19_11-47-47_483)
 
-This formalization represents a scientifically-oriented approach to non-dual metaphysics. Following complete axiomatizations of Advaita Vedanta, Daoism, and Dzogchen, this work demonstrates that non-dual structure admits rigorous logical treatment using terminology familiar to physicists, cognitive scientists, and empirically-minded philosophers. The formal system captures a unique ontic substrate presenting as phenomenal multiplicity, proving theorems about causality, spacetime representation, emptiness, and emergent properties. All proofs verified October 2025 using Isabelle/HOL 2025 with zero failed goals.
+This work demonstrates that non-dual structure admits rigorous logical treatment using terminology familiar to physicists, cognitive scientists, and empirically-minded philosophers. The formal system captures a unique ontic substrate presenting as phenomenal multiplicity, proving theorems about causality, spacetime representation, emptiness, and emergent properties. All proofs verified October 2025 using Isabelle/HOL 2025 with zero failed goals.
 
-This project completes a quartet of non-dual formalizations spanning religious traditions (Hindu, Daoist, Buddhist) and scientific frameworks. Together these verifications establish that non-dualism is not culturally bound mysticism but rather a logically coherent structure appearing independently across contemplative traditions and empirical investigation. The convergence under machine verification suggests non-dual awareness reflects fundamental features of reality accessible through both meditation and scientific inquiry.
+This project completes a quartet of non-dual formalizations spanning eastern traditions (Hindu, Daoist, Buddhist). The convergence under machine verification suggests non-dual awareness reflects fundamental features of reality.
 
 ---
 Other work:
