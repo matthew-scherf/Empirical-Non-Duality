@@ -13,10 +13,8 @@ This work demonstrates that non-dual structure admits rigorous logical treatment
 Philosophy became executable code on October 19, 2025. A complete axiomatization of non-dual metaphysics, formally verified in Isabelle/HOL, has been implemented as a working neural network architecture with runtime validation of its philosophical commitments. Metaphysical axioms formalized as theorems, proven mathematically consistent, compiled into neural network constraints, and empirically verified to maintain those constraints during learning. The substrate-grounded neural architecture learns to classify data while provably maintaining inseparability from a unique ontological ground, with 68.5% measured substrate dependence and exact frame invariance.
 
 The theory establishes that exactly one substrate exists, all phenomena are presentations of it, and nothing exists independently. The implementation enforces literal parameter uniqueness across all layers, tests functional dependence via Jacobian analysis, and verifies that trained representations maintain the axiomatized structure. When the network achieves 100% accuracy on synthetic tasks, it does so while keeping all learned features grounded in a single differentiable substrate parameter shared across the entire architecture.
-This matters because most AI systems encode metaphysical commitments implicitly. Neural networks assume concepts have fixed essences. Embeddings treat meaning as intrinsic properties. These aren't neutral engineering choices, they're philosophical positions that shape what biases the system inherits and what decisions it can explain. Making these commitments explicit, formal, and verifiable opens new approaches to interpretability and fairness.
+This matters because most AI systems encode metaphysical commitments implicitly, neural networks assume concepts have fixed essences, embeddings treat meaning as intrinsic properties. These philosophical positions  shape what biases the system inherits and what decisions it can explain, while making these commitments explicit, formal, and verifiable opens new approaches to interpretability and fairness.
 
-The code is open source. The formal proofs have a DOI. The tests run on a laptop in 60 seconds. This demonstrates that the distance between rigorous philosophy and practical engineering is bridgeable, that theorem provers and neural networks can share a common foundation, and that AI systems can be built where philosophical precision and computational performance aren't competing values but integrated commitments.
-What makes this unprecedented: It's the first complete implementation cycle from formal metaphysics to working AI, with mathematical verification at the theory level and empirical verification at the implementation level, demonstrating that philosophical rigor can compile to executable constraints in production-capable architectures.
 
 ```
 PS C:\Users\matts\Documents\GitHub\Unique-Ontic-Substrate\scripts> py sgna.py
@@ -32,6 +30,7 @@ Epoch 15: Accuracy=1.000, Inseparability=0.682, Time=0.6158
 Final inseparability: 0.693
 Training complete - axioms maintained throughout.
 ```
+
 The numbers tell an unexpected story. A neural network starts with random parameters, treating representations as independent entities. Inseparability from the substrate measures near zero. The network doesn't know about Ω yet, it's just initialized weights in a particular architectural configuration.
 
 Then training begins. The network receives a simple classification task alongside a constraint: maintain inseparability from a unique substrate. No guarantee exists that these objectives are compatible. The architecture creates capacity for substrate-grounded representations, but nothing forces the network to use it. The formal axioms are encoded as soft constraints, not hard requirements.
@@ -50,12 +49,12 @@ This suggests something about the relationship between ontological commitments a
 
 The time monotonicity result reinforces this. The causal graph defines 107 directed edges among 50 phenomena. The emergent time parameter T learns to respect these constraints, with T[i] < T[j] for causal edges i to j. This wasn't trained with explicit supervision on temporal ordering, just a soft penalty for violations. The system learns temporal structure that coheres with causal structure, implementing the Time_monotone axiom from the theory.
 
-These results are preliminary. A synthetic binary classification task on 200 samples doesn't prove the approach scales. But it demonstrates the proof of concept. Formal axioms from Isabelle/HOL can be operationalized as PyTorch losses. Training under these constraints produces systems that maintain the axiomatized structure. The learned representations are genuinely non-dual in a measurable, verifiable sense.
-The next questions become empirical. Does this scale to real datasets? MNIST, CIFAR, ImageNet? Does strong inseparability correlate with better bias metrics on fairness benchmarks? Does substrate grounding improve adversarial robustness? Do embeddings trained with emptiness constraints show different association patterns than standard word vectors? Does the frame-invariance of substrate predictions improve out-of-distribution generalization?
+These results are preliminary. A synthetic binary classification task on 200 samples doesn't prove the approach scales. But it demonstrates the proof of concept. Formal axioms from Isabelle/HOL can be operationalized as PyTorch losses. 
 
-But the fundamental question is answered. You can take machine-verified metaphysics, implement it as neural architecture, train it with standard methods, and get systems that maintain philosophical commitments while achieving task objectives. The gap between formal theory and practical AI is bridged. The training curve shows it working.
+But the fundamental question is answered. You can take machine-verified metaphysics, implement it as neural architecture, train it with standard methods, and get systems that maintain philosophical commitments while achieving task objectives, meaning the gap between formal theory and practical AI is bridged. The training curve shows it working.
+
 When inseparability goes from -0.017 to 0.693 over 15 epochs while accuracy goes from 50% to 100%, you're watching two things happen simultaneously: a network learning to classify, and a network learning to be non-dual. The formal axioms aren't constraints from outside the learning process, they're properties that emerge through it. This is what it looks like when philosophy becomes executable and execution validates philosophy.
-The numbers mean it works. The axioms hold. The theory compiles. Non-dual metaphysics runs as AI and maintains its structure while learning. That's the result.
+
 
 ---
 
