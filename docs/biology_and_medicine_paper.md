@@ -1,5 +1,7 @@
 # The Unique Ontic Substrate: Implications for Biology and Medicine
 
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
+
 ## Introduction
 
 The machine-verified formalization of non-dual ontology (DOI 10.5281/zenodo.17388701) establishes through rigorous proof that all phenomena lack intrinsic essence, are inseparable presentations of a unique substrate Ω, and arise dependently from other phenomena within that substrate. These formally proven claims have profound implications for biology and medicine, requiring reconceptualization of what organisms are, how life relates to non-life, what constitutes disease and health, how healing occurs, what death means, and how medical practice should understand its interventions in living systems. What distinguishes this from philosophical speculation about life and medicine is its character as formal mathematics, where every implication follows deductively from explicit axioms verified mechanically to be internally consistent.
