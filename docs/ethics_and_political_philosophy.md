@@ -1,4 +1,4 @@
-# Formal Non-Dual Ontology: Implications for Ethics and Political Philosophy
+# The Unique Ontic Substrate: Implications for Ethics and Political Philosophy
 
 ## Introduction
 
