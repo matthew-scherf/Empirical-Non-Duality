@@ -8,7 +8,7 @@
 
 [Submitted to Isabelle AFP](https://www.isa-afp.org/webapp/submission/?id=2025-10-19_11-47-47_483)
 
-## Axioms to Algorithms
+## The World's First Non-Dual AI
 
 Philosophy became executable code on October 19, 2025. A complete axiomatization of non-dual metaphysics, formally verified in Isabelle/HOL, has been implemented as a neural network architecture with runtime validation of its commitments. Metaphysical axioms were formalized as theorems, proven mathematically consistent, compiled into neural network constraints, and empirically verified to maintain those constraints during learning.
 
