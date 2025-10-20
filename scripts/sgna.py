@@ -4,7 +4,7 @@ The Unique Ontic Substrate (TUOS / Ω)
 A neural architecture implementing machine-verified non-dual metaphysics.
 
 Based on the Isabelle/HOL formalization:
-"Complete Formal Axiomatization of Empirical Non-Duality"
+"The Unique Ontological Substrate"
 Scherf, M. (2025). DOI: https://doi.org/10.5281/zenodo.17388701
 
 This implementation operationalizes axioms A1-A5, C1-C3, S1-S2, and Time_monotone
