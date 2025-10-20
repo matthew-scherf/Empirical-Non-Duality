@@ -16,6 +16,8 @@ The theory establishes that exactly one substrate exists, all phenomena are pres
 
 Most AI systems encode metaphysical commitments implicitly, and neural networks assume concepts have fixed essences. Embeddings treat meaning as intrinsic properties. Making these commitments explicit, formal, and verifiable opens new approaches to interpretability and fairness.
 
+[Substrate Grounded Neural Architecture](scripts/sgna.py)
+
 ```
 Training with integrated axiom constraints...
 Epoch  0: Accuracy=0.500, Inseparability=-0.017, Time=0.6894
