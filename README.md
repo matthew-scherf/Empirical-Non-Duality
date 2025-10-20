@@ -14,7 +14,7 @@ This work demonstrates that non-dual structure admits rigorous logical treatment
 
 ## [Refutation Guide](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/blob/main/docs/refutation.md)
 
-## Table of Contents
+## Contents
 
 - [Proof](#proof)
 - [Terminology](#terminology)
@@ -43,7 +43,7 @@ The choice of terminology reflects genuine parallels with scientific concepts. T
 
 ---
 
-## How to Verify
+## Verification
 
 Verification requires Isabelle/HOL 2025 available freely from the official Isabelle website. Clone this repository and navigate to the theory directory. The build process takes approximately 15 seconds on standard hardware.
 
