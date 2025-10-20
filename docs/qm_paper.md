@@ -1,6 +1,6 @@
 
 # The Unique Ontic Substrate (Ω): Implications for the Foundations of Quantum Theory
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 This represents the first completely formal, computer-verified axiomatization of a non-dual ontological framework, proven internally consistent through automated theorem proving. The system posits a unique ontic substrate (Ω) from which all observable phenomena arise as inseparable presentations, formally establishing non-duality as a provable theorem within the axiomatic structure. What distinguishes this work from philosophical speculation is its character as rigorous formal mathematics: every claim follows deductively from explicit axioms, verified mechanically to exclude logical error.
