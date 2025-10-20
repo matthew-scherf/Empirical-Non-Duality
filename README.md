@@ -98,7 +98,7 @@ Phenomena lack intrinsic essence independent of substrate.
 
 Emptiness - No phenomenon possesses essence. Essence here means intrinsic independent nature. Phenomena exist only as presentations of substrate, not as self-standing entities.
 
-This formalizes the Buddhist concept of śūnyatā (emptiness) and connects to modern relational ontologies where entities are defined by their relations rather than intrinsic properties.
+This connects to modern relational ontologies where entities are defined by their relations rather than intrinsic properties.
 
 ### Dependent Arising Extension (3 axioms)
 
@@ -108,7 +108,7 @@ AF1 - ArisesFrom relation holds only between phenomena.
 AF2 - If phenomenon p arises from phenomenon q, both present the substrate. Arising is internal to the substrate's self-presentation.
 AF3 - There are no exogenous entities outside the substrate-phenomenon structure. Everything that exists is either substrate or phenomenon.
 
-This captures dependent origination (pratītyasamutpāda) from Buddhist philosophy while maintaining non-dualism. Phenomena arise in patterns, but these patterns unfold within the substrate rather than being imposed from outside.
+Phenomena arise in patterns, but these patterns unfold within the substrate rather than being imposed from outside.
 
 ### Non-Appropriation Extension (2 axioms)
 
