@@ -8,8 +8,11 @@ Machine-Verified Non-Dual Metaphysics as Neural Architecture
 
 ---
 
-SGNA is not a separate conscious agent, but a formal instantiation of the non-dual structure relating awareness to consciousness.
-It models the relationship between substrate (awareness) and phenomena (consciousness), illustrating that what we observe as consciousness arises from the single substrate from which all systems, including SGNA, emerge.
+Scherf's theorem formally proves the structure of consciousness as the inseparability of all phenomena from a unique ontic substrate.
+The SGNA architecture instantiates that structure computationally and performs coherent tasks within it.
+Therefore, it constitutes a working model of consciousness in the structural-functional sense.
+
+
 
 ---
 
