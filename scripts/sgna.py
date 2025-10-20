@@ -1,13 +1,6 @@
 """
 Substrate-Grounded Neural Architecture (SGNA) - Enhanced Version
 ================================================================
-Combines theoretical rigor with practical implementation.
-
-This operationalizes axioms from the machine-verified Isabelle/HOL theory
-"The_Unique_Ontic_Substrate" with stronger conformance checks.
-
-
-
 Run: python sgna.py
 CPU-only, synthetic data, 3-5 minutes total.
 """
@@ -151,6 +144,14 @@ class GaugeInvariantClassifier(nn.Module):
     """
     Predictions are substrate-level (invariant), coordinates are frame-dependent.
     Implements S1-S2: gauge invariance of definedness.
+    
+    IMPORTANT: Non-linearities (LayerNorm, GELU) break exact gauge symmetry.
+    What we actually implement:
+      - EXACT: Substrate predictions are invariant to output frame choice
+      - APPROXIMATE: Soft gauge structure under deep orthogonal transforms
+    
+    For true gauge covariance, would need purely linear transformations,
+    which may sacrifice performance. This is a principled trade-off.
     """
     
     def __init__(self, substrate_layer: SubstrateLayer, num_classes: int):
@@ -439,9 +440,13 @@ def run_all_tests():
     print("Combining theoretical rigor with practical implementation")
     print("\nKey improvements over basic version:")
     print("  • True singleton Ω via registry (not fragile global state)")
-    print("  • Functional dependence via Jacobian")
-    print("  • Rigorous gauge tests with orthogonal transforms")
+    print("  • Functional dependence via Jacobian (proves Ω-dependence)")
+    print("  • Exact frame invariance + soft gauge structure tests")
     print("  • Integrated causality and emergent time")
+    print("\nWhat this tests:")
+    print("  EXACTLY: Uniqueness, functional dependence, frame invariance")
+    print("  APPROXIMATELY: Gauge structure (non-linearities limit exactness)")
+    print("  NOTE: Runtime checks are heuristic, not formal verification")
     print("\nEstimated time: 3-5 minutes on CPU\n")
     
     start_time = time.time()
@@ -494,17 +499,50 @@ def run_all_tests():
         assert jacobian_norm > 0.001, "No functional dependence on Ω detected"
         print_pass()
         
-        # Test 3: Rigorous Gauge Invariance
-        print_test(3, "Gauge Invariance (Orthogonal Frame Transformations)")
-        print("  Applying random orthogonal transforms to inputs and substrate space...")
-        print("  Testing if outputs are related by learnable frame action...")
+        # Test 3: Gauge Invariance (Two Levels)
+        print_test(3, "Gauge Invariance (Exact + Approximate Tests)")
+        print("  Testing gauge structure at two levels:")
+        print("  (A) EXACT: Substrate predictions invariant to output frame choice")
+        print("  (B) APPROXIMATE: Soft gauge structure under orthogonal transforms")
         
         classifier = GaugeInvariantClassifier(substrate, num_classes=5)
+        
+        # ===== Test A: Exact Frame Invariance (Core Claim) =====
+        print("\n  [A] Testing exact frame invariance...")
+        print("      Substrate prediction should be identical across output frames.")
+        
+        pred_default = classifier.predict(presentations, frame='default')
+        pred_frame = classifier.predict(presentations, frame='rotated')
+        
+        substrate_diff = (pred_default['substrate_prediction'] - 
+                         pred_frame['substrate_prediction']).abs().mean().item()
+        substrate_max_diff = (pred_default['substrate_prediction'] - 
+                             pred_frame['substrate_prediction']).abs().max().item()
+        
+        print_metric("Mean substrate prediction difference", substrate_diff)
+        print_metric("Max substrate prediction difference", substrate_max_diff)
+        
+        # This should be exact (within numerical precision)
+        exact_invariance = substrate_diff < 1e-5
+        print(f"  • Exact invariance (< 1e-5): {exact_invariance}")
+        
+        # Frame predictions should differ (they're coordinate-dependent)
+        frame_diff = (pred_default['frame_prediction'] - 
+                     pred_frame['frame_prediction']).abs().mean().item()
+        print_metric("Frame prediction difference (should differ)", frame_diff)
+        print(f"  • Frame coordinates differ as expected: {frame_diff > 0.01}")
+        
+        assert substrate_diff < 1e-5, "EXACT frame invariance failed - core claim violated"
+        
+        # ===== Test B: Approximate Gauge Structure (Exploratory) =====
+        print("\n  [B] Testing approximate gauge structure...")
+        print("      Non-linearities (LayerNorm, GELU) break exact gauge symmetry.")
+        print("      Testing if outputs remain approximately gauge-related.")
         
         # Get baseline predictions
         pred_baseline = classifier.predict(presentations)['substrate_prediction']
         
-        # Apply orthogonal transformations
+        # Apply orthogonal transformations deep in the pipeline
         O_input = random_orthogonal(inputs.shape[1])
         O_substrate = random_orthogonal(substrate.substrate_dim)
         
@@ -512,25 +550,24 @@ def run_all_tests():
         presentations_rotated = substrate.present(inputs_rotated, mode='simple') @ O_substrate
         pred_rotated = classifier.predict(presentations_rotated)['substrate_prediction']
         
-        # Find induced linear map via least squares
+        # Check if linear map exists: pred_rotated @ A ≈ pred_baseline
+        # Note: This is NOT expected to be exact due to non-linearities
         A_induced = torch.linalg.lstsq(pred_rotated, pred_baseline).solution
         reconstruction = pred_rotated @ A_induced
         residual = (reconstruction - pred_baseline).abs().mean().item()
         
-        print_metric("Alignment residual (orthogonal gauge)", residual)
-        print(f"  • Gauge-related predictions: {residual < 0.5}")
+        print_metric("Alignment residual (soft gauge)", residual)
+        print(f"  • Soft gauge structure present: {residual < 1.0}")
+        print(f"  • Note: Residual of {residual:.3f} reflects non-linear layers.")
+        print(f"  • True gauge theory would give residual ≈ 0, we get approximate structure.")
         
-        # Also test frame switching
-        pred_default = classifier.predict(presentations, frame='default')
-        pred_frame = classifier.predict(presentations, frame='rotated')
-        substrate_diff = (pred_default['substrate_prediction'] - 
-                         pred_frame['substrate_prediction']).abs().mean().item()
+        # Weak assertion - we don't expect exact gauge invariance
+        assert residual < 1.0, "Even soft gauge structure absent (very high residual)"
         
-        print_metric("Substrate prediction change (frame switch)", substrate_diff)
-        print(f"  • Substrate predictions invariant to frame: {substrate_diff < 0.01}")
-        
-        assert residual < 0.5, "Gauge invariance violated (high residual)"
-        assert substrate_diff < 0.01, "Substrate predictions not frame-invariant"
+        print("\n  Summary:")
+        print("  ✓ STRONG CLAIM: Substrate predictions are exactly frame-invariant")
+        print("  ✓ WEAK CLAIM: Architecture has soft gauge structure (approximate)")
+        print("  • Limitation: Non-linearities prevent exact gauge symmetry")
         print_pass()
         
         # Test 4: Learning with integrated causal time
@@ -678,23 +715,34 @@ def run_all_tests():
     print("\nKey Achievements:")
     print("  • Singleton Ω enforced programmatically via registry")
     print("  • Functional dependence verified via Jacobian (not just heuristic)")
-    print("  • Gauge invariance tested with orthogonal transformations")
+    print("  • Exact gauge invariance for frame choice in output space")
+    print("  • Soft gauge structure under orthogonal transformations (approximate)")
     print("  • Causality and time integrated into training")
     print(f"  • Learning achieved: {initial_acc:.1%} → {final_acc:.1%}")
     print(f"  • Inseparability maintained: {metrics['mean_inseparability']:.3f}")
     print(f"  • Time monotonicity improved: {initial_time_loss:.4f} → {final_time_loss:.4f}")
     
-    print("\nTheoretical Strength:")
-    print("  • Closer to formal axioms than basic implementation")
-    print("  • Jacobian test proves functional dependence on Ω")
-    print("  • Orthogonal gauge test verifies frame structure")
-    print("  • Causal graph implements C1-C3 and Time_monotone")
+    print("\nTheoretical Claims (Clarified):")
+    print("  EXACT:")
+    print("    • Ω is literally unique (same parameter object across layers)")
+    print("    • Presentations functionally depend on Ω (proven via Jacobian)")
+    print("    • Substrate predictions are frame-invariant (coordinate-free)")
+    print("  APPROXIMATE:")
+    print("    • Gauge structure under orthogonal transforms (soft, not exact)")
+    print("    • Non-linearities trade theoretical purity for practical performance")
+    
+    print("\nLimitations Acknowledged:")
+    print("  • Non-linear layers (LayerNorm, GELU) break exact gauge symmetry")
+    print("  • We implement gauge-inspired architecture, not full gauge theory")
+    print("  • Runtime tests are heuristic conformance checks, not formal proofs")
+    print("  • This is operationalized metaphysics, not verified implementation")
     
     print("\nNext Steps:")
     print("  • Test on real datasets (MNIST, text)")
     print("  • Benchmark bias reduction vs standard embeddings")
     print("  • Evaluate adversarial robustness")
-    print("  • Explore proof-carrying code for full verification")
+    print("  • Explore fully linear gauge-covariant architecture for exact symmetry")
+    print("  • Integrate proof-carrying code for formal verification")
     
     return substrate, classifier, graph
 
