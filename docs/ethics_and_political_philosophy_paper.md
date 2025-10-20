@@ -1,5 +1,5 @@
 # The Unique Ontic Substrate: Implications for Ethics and Political Philosophy
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 The machine-verified formalization of non-dual ontology (DOI 10.5281/zenodo.17388701) establishes through rigorous proof that all phenomena lack intrinsic essence, are inseparable presentations of a unique substrate Ω, and arise dependently from other phenomena within that substrate. These formally proven claims have profound and unsettling implications for ethics and political philosophy, requiring reconceptualization of moral responsibility, personal identity, rights, justice, property, political boundaries, and the relationship between individual and collective. What distinguishes this analysis from philosophical speculation is that every implication follows deductively from axioms verified mechanically to be internally consistent, the formalization is formal mathematics rather than normative argument, yet its descriptive metaphysical claims constrain what normative frameworks can coherently maintain.
