@@ -1,5 +1,5 @@
 # The Unique Ontic Substrate: Implications for Mathematics and Logic
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 The machine-verified formalization of non-dual ontology (DOI 10.5281/zenodo.17388701) presents a unique case where formal mathematics establishes through rigorous proof that all phenomena lack intrinsic essence, are inseparable presentations of a unique substrate Ω, and arise dependently from other phenomena. This creates a peculiar reflexive situation where a formal mathematical system makes claims about the ontological status of all phenomena, potentially including mathematical and logical entities themselves. What distinguishes this from mere philosophical speculation about mathematics is that the formalization is itself mathematics, computer-verified formal logic in Isabelle/HOL, creating unprecedented opportunity for mathematics and logic to examine their own ontological foundations through formally proven structure.
