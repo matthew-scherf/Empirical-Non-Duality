@@ -14,7 +14,7 @@ This project completes a quartet of non-dual formalizations spanning eastern tra
 
 ---
 Other work:
-- [Advaita Vedanta](https://github.com/matthew-scherf/Only-One/) - Machine-verified Advaita
+- [Advaita](https://github.com/matthew-scherf/Only-One/) - Machine-verified Advaita
 - [Daoism](https://github.com/matthew-scherf/Uncarved-Block/) - Machine-verified Daosim
 - [Dzogchen](https://github.com/matthew-scherf/Great-Perfection/) - Machine-verified Dzogchen
 ---
