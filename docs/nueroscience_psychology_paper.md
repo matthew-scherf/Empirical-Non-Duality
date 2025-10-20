@@ -1,6 +1,6 @@
 
 # The Unique Ontic Substrate: Implications for Neuroscience and Psychology
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 The machine-verified Isabelle/HOL formalization presents the first complete formal axiomatization of non-dual ontology (DOI 10.5281/zenodo.17388701), establishing through rigorous proof that all phenomena are inseparable presentations of a unique substrate Ω, that phenomena lack intrinsic essence, and that causal relations exist only among phenomena while substrate stands outside causal structure. This formally verified framework has profound implications for neuroscience and psychology, requiring reconceptualization of the relationship between brain and consciousness, the nature of psychological suffering, the status of the self, and the mechanisms of therapeutic change. What distinguishes this from philosophical speculation about mind-brain relations is its character as formal mathematics, where every claim follows deductively from explicit axioms verified mechanically to be internally consistent.
