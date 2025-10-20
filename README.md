@@ -19,8 +19,6 @@
 
 This formal system is intentionally structured to be self-consistent and closed. Every theorem follows as logical consequence of clearly stated axioms. The system has been mechanically verified using Isabelle/HOL 2025 and checked for countermodels using Nitpick across domain cardinalities 1 through 5. No contradictions were found and no countermodels exist within the finite scopes tested.
 
-This is the fourth machine-verified formalization of non-dual philosophy, following Advaita Vedanta, Daoism, and Dzogchen. Unlike those formalizations which use traditional religious terminology, this work employs scientific language (substrate, presentation, gauge invariance, emergence). The structural similarities across all four verifications demonstrate that non-dualism is framework-agnostic and logically coherent regardless of whether expressed in contemplative or scientific terms.
-
 Nevertheless, in principle the theory could be refuted through several paths. This document examines each potential path and explains why refutation is unlikely to succeed.
 
 [Refutation Guide](docs/refutation_guide.md)
