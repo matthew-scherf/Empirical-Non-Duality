@@ -1,6 +1,6 @@
 # The Unique Ontic Substrate **Ω**
 
-**A machine-verified axiomatization of non-dual metaphysics in Isabelle/HOL using scientific terminology and empirically grounded concepts**
+**A machine-verified axiomatization of non-dual metaphysics in Isabelle/HOL**
 
 [![Verification Status](https://img.shields.io/badge/verification-passing-brightgreen)](verification/)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE.txt)
