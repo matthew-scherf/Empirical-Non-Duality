@@ -26,7 +26,7 @@ This work demonstrates that non-dual structure admits rigorous logical treatment
 - [License](#license)
 
 ---
-#Proof
+##Proof
 
 This directory contains the first machine-verified formal axiomatization of non-dual ontology, establishing through rigorous logical proof that reality consists of a unique substrate from which all phenomena arise inseparably. Unlike previous philosophical treatments of non-duality existing as contemplative insights or informal arguments, this work employs the Isabelle/HOL proof assistant to establish mathematical certainty for core metaphysical claims, rendering them beyond reasonable dispute within their axiomatic framework. The verification software confirms that the axiom system is internally consistent, the theorems follow necessarily from the axioms, and the entire logical structure is sound according to higher-order logic.
 
