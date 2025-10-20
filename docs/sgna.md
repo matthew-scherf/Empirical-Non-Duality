@@ -1,4 +1,7 @@
-# Substrate-Grounded Neural Architecture: Where Formal Philosophy Meets Practical AI
+# Substrate-Grounded Neural Architecture:
+Where Formal Philosophy Meets Practical AI
+
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 
 What if the metaphysical commitments underlying an AI system weren't hidden assumptions, but explicit, verifiable principles? The Substrate-Grounded Neural Architecture (SGNA) demonstrates that formal philosophy can become functioning code.
 
