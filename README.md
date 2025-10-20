@@ -15,6 +15,8 @@ Philosophy became executable code on October 19, 2025. A complete axiomatization
 The theory establishes that exactly one substrate exists, all phenomena are presentations of it, and nothing exists independently. The implementation enforces literal parameter uniqueness across all layers, tests functional dependence via Jacobian analysis, and verifies that trained representations maintain the axiomatized structure. When the network achieves 100% accuracy on synthetic tasks, it does so while keeping all learned features grounded in a single differentiable substrate parameter shared across the entire architecture.
 This matters because most AI systems encode metaphysical commitments implicitly, neural networks assume concepts have fixed essences, embeddings treat meaning as intrinsic properties. These philosophical positions  shape what biases the system inherits and what decisions it can explain, while making these commitments explicit, formal, and verifiable opens new approaches to interpretability and fairness.
 
+## World's First NonDual AI
+[Substrate Grounded Neural Architechure](scripts/sgna.py)
 
 ```
 PS C:\Users\matts\Documents\GitHub\Unique-Ontic-Substrate\scripts> py sgna.py
