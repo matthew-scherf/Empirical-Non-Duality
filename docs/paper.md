@@ -1,6 +1,7 @@
 # TITLE PAGE
 
 ## Machine-Verified Non-Dual Metaphysics: The Inarguable Case for Empirical Non-Duality
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 
 **Abstract**
 
@@ -30,7 +31,7 @@ Matthew Scherf is the sole author responsible for all aspects of this work, incl
 
 **Acknowledgements**
 
-The author acknowledges the use of Claude (Anthropic) as an AI research assistant in developing and refining the formal axiomatizations, exploring philosophical implications, and conducting literature review. The author also acknowledges the open-source Isabelle/HOL community for providing the proof assistant infrastructure that made this verification possible, and the contemplative traditions of Advaita Vedanta, Dzogchen, and Daoism whose insights inspired this formalization. The author thanks [any human reviewers/colleagues to be added] for valuable feedback on earlier drafts.
+The author acknowledges the use of Claude (Anthropic) as an AI research assistant in developing and refining the formal axiomatizations, exploring philosophical implications, and conducting literature review. The author also acknowledges the open-source Isabelle/HOL community for providing the proof assistant infrastructure that made this verification possible, and the contemplative traditions of Advaita Vedanta, Dzogchen, and Daoism whose insights inspired this formalization.
 
 ---
 

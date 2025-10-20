@@ -1,5 +1,5 @@
 # Refutation Guide
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Overview
 
 This formal system is intentionally structured to be self-consistent and closed. Every theorem follows as logical consequence of clearly stated axioms. The system has been mechanically verified using Isabelle/HOL 2025 and checked for countermodels using Nitpick across domain cardinalities 1 through 5. No contradictions were found and no countermodels exist within the finite scopes tested.

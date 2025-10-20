@@ -1,80 +1,57 @@
 # The Unique Ontic Substrate **Ω**
-∃!s. Substrate s ∧ ∀p. Phenomenon p → Presents p s
 
-**A machine-verified axiomatization of non-dual metaphysics in Isabelle/HOL using scientific terminology and empirically grounded concepts**
+**A machine-verified axiomatization of non-dual metaphysics in Isabelle/HOL**
 
 [![Verification Status](https://img.shields.io/badge/verification-passing-brightgreen)](verification/)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)](LICENSE.txt)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17388701.svg)](https://doi.org/10.5281/zenodo.17388701)
 
-This formalization represents a scientifically-oriented approach to non-dual metaphysics. Following complete axiomatizations of Advaita Vedanta, Daoism, and Dzogchen, this work demonstrates that non-dual structure admits rigorous logical treatment using terminology familiar to physicists, cognitive scientists, and empirically-minded philosophers. The formal system captures a unique ontic substrate presenting as phenomenal multiplicity, proving theorems about causality, spacetime representation, emptiness, and emergent properties. All proofs verified October 2025 using Isabelle/HOL 2025 with zero failed goals.
+[Submitted to Isabelle AFP](https://www.isa-afp.org/webapp/submission/?id=2025-10-19_11-47-47_483)
 
-This project completes a quartet of non-dual formalizations spanning religious traditions (Hindu, Daoist, Buddhist) and scientific frameworks. Together these verifications establish that non-dualism is not culturally bound mysticism but rather a logically coherent structure appearing independently across contemplative traditions and empirical investigation. The convergence under machine verification suggests non-dual awareness reflects fundamental features of reality accessible through both meditation and scientific inquiry.
+This work demonstrates that non-dual structure admits rigorous logical treatment. The formal system captures a unique ontic substrate presenting as phenomenal multiplicity, proving theorems about causality, spacetime representation, emptiness, and emergent properties. All proofs verified October 2025 using Isabelle/HOL 2025.
 
 ---
 
 ## [Refutation Guide](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/blob/main/docs/refutation.md)
 
-## Table of Contents
+## Contents
 
-- [Prove It](#prove-it)
-- [The Central Result](#the-central-result)
-- [Why Scientific Terminology Matters](#why-scientific-terminology-matters)
-- [Bridging Contemplation and Science](#bridging-contemplation-and-science)
-- [How to Verify](#how-to-verify)
-- [The Axiom System](#the-axiom-system)
-- [Key Theorems](#key-theorems)
-- [Relationship to Physics and Cognitive Science](#relationship-to-physics-and-cognitive-science)
-- [Philosophical Implications](#philosophical-implications)
+- [Proof](#proof)
+- [Verification](#verification)
+- [Axioms](#axioms)
+- [Theorems](#theorems)
+- [Documentation](#documentation)
+- [Declarations](#declarations)
 - [Citation](#citation)
 - [License](#license)
 
 ---
+## Proof
 
-## Prove It
+This directory contains the first machine-verified formal axiomatization of non-dual ontology, establishing through rigorous logical proof that reality consists of a unique substrate from which all phenomena arise inseparably. Unlike previous philosophical treatments of non-duality existing as contemplative insights or informal arguments, this work employs the Isabelle/HOL proof assistant to establish mathematical certainty for core metaphysical claims, rendering them beyond reasonable dispute within their axiomatic framework. The verification software confirms that the axiom system is internally consistent, the theorems follow necessarily from the axioms, and the entire logical structure is sound according to higher-order logic.
 
-The formalization establishes through mechanical verification that a non-dual ontology is internally consistent when expressed in scientifically rigorous terms, using minimal axioms about a unique substrate and its phenomenal presentations to prove theorems about causality and spacetime and information and emergent properties without invoking religious concepts or supernatural claims.
+The formalization proves that exactly one ontic substrate exists from which all phenomena arise as presentations or modes, that this substrate is not itself phenomenal but transcends phenomenal categories, that every phenomenal entity is inseparable from the substrate where inseparability means the phenomenon is a presentation of the substrate, that causality operates only at the phenomenal level with substrate standing outside causal relations, that spacetime coordinates apply only to phenomena (making spacetime representational structure rather than fundamental reality), that phenomena lack intrinsic essence independent of substrate, and that information and time emerge as properties of phenomenal presentations rather than constituting fundamental features of substrate itself. 
 
-The core claims verified through proof include the following. There exists exactly one ontic substrate from which all phenomena arise as presentations or modes, and this substrate is not itself phenomenal. All phenomenal entities are inseparable from the substrate in the precise sense that each phenomenon is a presentation of the substrate, and causality operates only at the phenomenal level and does not apply to the substrate itself. Spacetime coordinates apply only to phenomena, not to the substrate, making spacetime a representational structure rather than fundamental reality. Phenomena lack intrinsic essence independent of the substrate, and information and time are emergent properties of phenomenal presentations rather than fundamental features of the substrate.
+The central Nonduality theorem establishes that for any phenomenon that phenomenon is inseparable from the unique substrate, with the proof proceeding necessarily from axioms stating all phenomena present the substrate and exactly one substrate exists, such that given these minimal assumptions about presentation and uniqueness every phenomenon stands in the inseparability relation to substrate as matter of logical necessity. The formalization demonstrates that non-dual metaphysics admits complete rigorous treatment using same formal methods applied to mathematics and verified software systems.
 
-These are proven theorems following necessarily from stated axioms. The verification software confirms logical consistency. This is a mathematical structure compatible with empirical observation and scientific methodology.
-
-The formalization proves non-duality as inseparability of phenomena from substrate, stating that for any phenomenon, that phenomenon is inseparable from the unique substrate, where inseparability is defined precisely as the relation holding when the phenomenon is a presentation of the substrate. The theorem follows from the axioms that all phenomena present the substrate and that exactly one substrate exists. This is a rigorous logical result, and given the axioms about presentation and uniqueness, every phenomenon necessarily stands in the inseparability relation to the substrate. The formalization makes precise what contemplative traditions describe poetically.
-
-## Terminology
-
-The contemplative traditions use culturally-specific religious language, terms like Brahman and Dao and rigpa embedded in particular historical and cultural contexts, and this creates barriers for scientists and secular philosophers who might dismiss non-dualism as religious metaphysics irrelevant to empirical inquiry.
-
-The present formalization translates non-dual structure into neutral scientific terminology. Instead of Brahman we have substrate, instead of maya we have phenomenal presentation, instead of recognition we have coherence between levels, and the logical structure remains identical but the language becomes accessible to empirically-minded investigators. This matters because it reveals that non-dualism is not essentially religious, that the same formal structure describing Advaita metaphysics also describes a substrate ontology compatible with modern physics and cognitive science. When you strip away cultural and religious elements what remains is a minimal ontology with remarkable explanatory power.
-
-The choice of terminology also reflects genuine parallels with scientific concepts. The substrate-presentation relation parallels the relationship between quantum fields and particle excitations, gauge invariance in physics, where different coordinate systems describe the same reality, directly parallels the gauge axioms in the formalization, and emergence of time from more fundamental atemporal structure appears in quantum gravity research. These are not superficial analogies. The formal structure genuinely captures patterns appearing in both contemplative investigation and scientific research, and the formalization proves that these patterns are logically coherent and mutually consistent.
-
-## Bridging
-
-This is the fourth machine-verified formalization of non-dual philosophy. The first three used traditional religious terminology, this fourth uses scientific language, and the fact that all four formalize successfully and reveal structural similarities demonstrates that non-dualism transcends the contemplative-scientific divide.
-
-Contemplative traditions discovered non-dual structure through systematic investigation of consciousness, developing precise methodologies for recognizing the substrate nature of awareness, and their descriptions use the language available in their cultural contexts. Modern science investigates the same reality from a different angle, physics studying the structure of spacetime and matter-energy while cognitive science studies the structure of experience and cognition, and both encounter puzzles that resist solution within standard dualist frameworks, puzzles like the hard problem of consciousness and the measurement problem in quantum mechanics and the nature of time.
-
-The formalization suggests these puzzles might dissolve in a non-dual framework. If phenomena are presentations of a substrate rather than independent entities the hard problem vanishes because consciousness is the substrate itself rather than an emergent property, and if spacetime is representational rather than fundamental then quantum measurement becomes less mysterious because we no longer demand that fundamental reality conform to spatial-temporal structure. If time is emergent from atemporal substrate, temporal paradoxes in physics find resolution.
-
-The four formalizations together establish that non-dualism is framework-agnostic, that religious language and scientific language describe the same logical structure, and this structure admits rigorous proof and survives mechanical verification regardless of terminology.
+The terminology reflects genuine structural parallels across domains where the substrate-presentation relation captures how quantum fields relate to particle excitations in physics, how gauge transformations in field theory preserve underlying reality while changing mathematical representation, and how time emerges from atemporal structure in quantum gravity approaches, with the formal axioms proving these patterns are logically coherent and mutually consistent whether discovered through contemplative investigation or scientific research. The formalization provides unified framework integrating insights from Advaita Vedanta, Dzogchen Buddhism, Daoist philosophy, quantum mechanics, consciousness studies, and foundations of physics, demonstrating through machine verification that these diverse traditions and disciplines describe the same underlying logical structure of reality as presentations arising from unique substrate.
 
 ---
 
-## How to Verify
+## Verification
 
-Verification requires Isabelle/HOL 2025 available freely from the official Isabelle website. Clone this repository and navigate to the theory directory. The build process takes approximately 15 seconds on standard hardware.
+Verification requires Isabelle/HOL 2025 available freely from the official Isabelle website. Clone this repository and navigate to the root directory. The build process takes approximately 15 seconds on standard hardware.
 
 ```bash
-git clone https://github.com/matthew-scherf/Empirical-NonDuality.git
+git clone https://github.com/matthew-scherf/The-Unique-Ontic_Substrate.git
 cd The_Unique_Ontic_Substrate
 isabelle build -d . -v The_Unique_Ontic_Substrate
 
 ```
 
-Successful verification produces output confirming all theorems check. The [verification documentation](docs/verification.md) contains proof logs and screenshots documenting successful runs. The Nitpick model finder was used with `user_axioms = true` over domain cardinalities 1 through 5 to check for counterexamples. None were found within these finite scopes.
+Successful verification produces output confirming all theorems check. The Nitpick model finder was used with `user_axioms = true` over domain cardinalities 1 through 5 to check for counterexamples. None were found within these finite scopes.
 
-## The Axiom System
+## Axioms
 
 The formalization rests on minimal axioms organized into core ontology and extensions addressing causality, spacetime, emptiness, and emergent properties.
 
@@ -82,27 +59,28 @@ The formalization rests on minimal axioms organized into core ontology and exten
 
 The foundation establishes existence, uniqueness, and presentation structure.
 
-**A1 (Existence)** - At least one substrate exists. This ensures the ontology is non-vacuous.
+`A1` (Existence). At least one substrate exists. This ensures the ontology is non-vacuous.
 
-**A2 (Uniqueness)** - If two entities are both substrates, they are identical. This establishes monism at the fundamental level.
+`A2` (Uniqueness). If two entities are both substrates, they are identical. This establishes monism at the fundamental
+level.
 
-**A3 (Exhaustivity)** - Every entity is either phenomenal or substrate. This creates a clean ontological dichotomy.
+`A3` (Exhaustivity). Every entity is either phenomenal or substrate. This creates a clean ontological dichotomy.
 
-**A4 (Presentation)** - Every phenomenon presents every substrate. Combined with uniqueness, this means every phenomenon presents the unique substrate.
+`A4` (Presentation). Every phenomenon presents every substrate. Combined with uniqueness, this means every phenomenon presents the unique substrate.
 
-**A5 (Inseparability Definition)** - Two entities are inseparable when one is a phenomenon presenting the substrate and the other is that substrate. This makes inseparability precise and computable.
+`A5` (Inseparability Definition). Two entities are inseparable when one is a phenomenon presenting the substrate and the other is that substrate. This makes inseparability precise and computable.
 
-From these axioms we derive that exactly one substrate exists (proven in unique_substrate lemma). We can define this unique substrate as Ω (TheSubstrate). The Nonduality theorem follows necessarily.
+From these axioms we derive that exactly one substrate exists (proven in `unique_substrate` lemma). We can define this unique substrate as Ω (TheSubstrate). The Nonduality theorem follows necessarily.
 
 ### Causality Extension (3 axioms)
 
 Causality is restricted to the phenomenal level.
 
-**C1** - Causal relations hold only between phenomena, never involving the substrate.
+`C1` Causal relations hold only between phenomena, never involving the substrate.
 
-**C2** - Causality is irreflexive. No phenomenon causally precedes itself.
+`C2`Causality is irreflexive. No phenomenon causally precedes itself.
 
-**C3** - Causality is transitive. If x precedes y and y precedes z, then x precedes z.
+`C3` Causality is transitive. If x precedes y and y precedes z, then x precedes z.
 
 This creates a strict partial order on phenomena while leaving the substrate outside causal structure. Time and causation are emergent features of phenomenal presentation rather than properties of fundamental reality.
 
@@ -110,9 +88,9 @@ This creates a strict partial order on phenomena while leaving the substrate out
 
 Spacetime coordinates apply only to phenomena, not to substrate.
 
-**S1** - If an entity has coordinates in some reference frame, that entity is phenomenal.
+`S1` If an entity has coordinates in some reference frame, that entity is phenomenal.
 
-**S2** - Gauge-related frames agree on whether entities have coordinates. Different coordinate systems are equivalent representations.
+`S2` Gauge-related frames agree on whether entities have coordinates. Different coordinate systems are equivalent representations.
 
 This formalizes the idea that spacetime is a representational structure for phenomena rather than fundamental container. The substrate is not located in space or time. Phenomena appear to occupy spacetime positions, but these positions are frame-dependent representations rather than intrinsic properties.
 
@@ -120,29 +98,29 @@ This formalizes the idea that spacetime is a representational structure for phen
 
 Phenomena lack intrinsic essence independent of substrate.
 
-**Emptiness** - No phenomenon possesses essence. Essence here means intrinsic independent nature. Phenomena exist only as presentations of substrate, not as self-standing entities.
+Emptiness - No phenomenon possesses essence. Essence here means intrinsic independent nature. Phenomena exist only as presentations of substrate, not as self-standing entities.
 
-This formalizes the Buddhist concept of śūnyatā (emptiness) and connects to modern relational ontologies where entities are defined by their relations rather than intrinsic properties.
+This connects to modern relational ontologies where entities are defined by their relations rather than intrinsic properties.
 
 ### Dependent Arising Extension (3 axioms)
 
 One phenomenon can arise from another, but this arising is endogenous to the substrate.
 
-**AF1** - ArisesFrom relation holds only between phenomena.
+`AF1` ArisesFrom relation holds only between phenomena.'
 
-**AF2** - If phenomenon p arises from phenomenon q, both present the substrate. Arising is internal to the substrate's self-presentation.
+`AF2` If phenomenon p arises from phenomenon q, both present the substrate. Arising is internal to the substrate's self-presentation.
 
-**AF3** - There are no exogenous entities outside the substrate-phenomenon structure. Everything that exists is either substrate or phenomenon.
+`AF3` There are no exogenous entities outside the substrate-phenomenon structure. Everything that exists is either substrate or phenomenon.
 
-This captures dependent origination (pratītyasamutpāda) from Buddhist philosophy while maintaining non-dualism. Phenomena arise in patterns, but these patterns unfold within the substrate rather than being imposed from outside.
+Phenomena arise in patterns, but these patterns unfold within the substrate rather than being imposed from outside.
 
 ### Non-Appropriation Extension (2 axioms)
 
 Ownership is conventional, not ontological.
 
-**Ownership_Conventional** - If an agent owns an entity, that entity is phenomenal and conventionally valid.
+`Ownership_Conventional` If an agent owns an entity, that entity is phenomenal and conventionally valid.
 
-**No_Ontic_Ownership** - Owned entities are inseparable from substrate and lack essence. Ownership is a useful fiction for navigating conventional reality but has no ultimate metaphysical status.
+`No_Ontic_Ownership` Owned entities are inseparable from substrate and lack essence. Ownership is a useful fiction for navigating conventional reality but has no ultimate metaphysical status.
 
 This has implications for ethics and social organization. Property rights and ownership claims are pragmatically justified conventions rather than fundamental facts about reality.
 
@@ -150,9 +128,9 @@ This has implications for ethics and social organization. Property rights and ow
 
 Gauge transformations preserve presentation structure.
 
-**Act_Closed** - Gauge actions on phenomena produce phenomena.
+`Act_Closed` Gauge actions on phenomena produce phenomena.
 
-**Act_Preserves_Presentation** - If a phenomenon presents the substrate, its gauge transform also presents the substrate.
+`Act_Preserves_Presentation` If a phenomenon presents the substrate, its gauge transform also presents the substrate.
 
 This formalizes the idea that different representational perspectives (different gauges) are equivalent. The substrate-presentation structure is gauge-invariant. This directly parallels gauge invariance in physics where physical laws remain unchanged under certain transformations.
 
@@ -160,73 +138,122 @@ This formalizes the idea that different representational perspectives (different
 
 Information is a non-negative quantity attached to phenomena. Time is an emergent strict ordering on phenomena respecting causal structure. These are formalized abstractly without assuming numeric structure, showing that the core insights survive in minimal mathematical frameworks.
 
-## Key Theorems
+## Theorems
 
 The formalization proves multiple theorems establishing non-dual structure and its consequences.
 
-**Nonduality** - Every phenomenon is inseparable from the substrate. This is the master theorem from which others follow.
+`Nonduality` Every phenomenon is inseparable from the substrate. This is the master theorem from which others follow.
 
-**Causal_NotTwo** - Causally related phenomena are both inseparable from substrate. Causality cannot establish real separation.
+`Causal_NotTwo` Causally related phenomena are both inseparable from substrate. Causality cannot establish real separation.
 
-**Spacetime_Unreality** - Any entity with spacetime coordinates is inseparable from substrate. Spacetime localization does not confer independent reality.
+`Spacetime_Unreality` Any entity with spacetime coordinates is inseparable from substrate. Spacetime localization does not confer independent reality.
 
-**Info_Nonreifying** - Phenomena carrying information remain inseparable from substrate. Information does not create substance.
+`Info_Nonreifying` Phenomena carrying information remain inseparable from substrate. Information does not create substance.
 
-**Time_Emergent_NotTwo** - Temporal ordering does not create separation from substrate. Time is emergent feature of presentation.
+`Time_Emergent_NotTwo` Temporal ordering does not create separation from substrate. Time is emergent feature of presentation.
 
-**Symmetry_Preserves_NotTwo** - Gauge transformations preserve inseparability. Different perspectives do not fragment underlying unity.
+`Symmetry_Preserves_NotTwo` Gauge transformations preserve inseparability. Different perspectives do not fragment underlying unity.
 
-**Concepts_Don't_Reify** - Conceptual annotation of phenomena does not make them separately real. Concepts are tools for navigation, not discoveries of intrinsic divisions.
+`Concepts_Don't_Reify` Conceptual annotation of phenomena does not make them separately real. Concepts are tools for navigation, not discoveries of intrinsic divisions.
 
-Each theorem is machine-verified and follows necessarily from axioms. The proof logs confirm every inference step.
+Each theorem is machine-verified and follows necessarily from axioms. 
 
-## Relationship to Physics and Cognitive Science
+---
+## Documentation
 
-## Quantum Foundations
+## Main Journal Submission
 
-The substrate-presentation structure parallels interpretations of quantum mechanics where the wave function or quantum field is fundamental and particles are excitations or modes, and the substrate resembles the quantum vacuum or Hilbert space from which particle states arise. Phenomena presenting the substrate resemble particle states as representations of underlying field.
+**[paper.md](docs/paper.md)** 
 
-The gauge invariance axioms directly parallel gauge theories in physics, where different gauge choices like different coordinate systems in spacetime represent the same underlying reality, and the formalization proves that gauge transformations preserve the substrate-presentation structure exactly as gauge transformations in physics preserve physical content.
+The primary academic paper submitted for journal publication, titled "Machine-Verified Non-Dual Metaphysics: The Inarguable Case for Empirical Non-Duality." This comprehensive work presents the first machine-verified formal ontology of non-dualistic metaphysics, arguing that empirical non-duality represents "the only rationally acceptable metaphysical framework currently available." The paper establishes five core axioms (existence, uniqueness, exhaustivity, presentation, and inseparability definition) from which the central theorem of non-duality follows with mathematical certainty. It demonstrates structural correspondence between the empirical formalization and independently verified formalizations of Advaita Vedanta, Dzogchen, and Daoism, providing cross-cultural confirmation of the framework's validity. The paper systematically refutes alternative metaphysical positions including substance dualism (interaction problem), physicalism (hard problem of consciousness), idealism (regularity problem), and neutral monism (articulation problem), demonstrating how each fails where empirical non-duality succeeds. Extensive analysis covers implications for quantum mechanics (measurement problem, entanglement, spacetime emergence), consciousness studies (dissolving the hard problem), artificial intelligence (substrate independence), and broader scientific and social domains. The paper includes formal verification appendix with Isabelle/HOL proof details and Nitpick consistency checking results, establishing that all claims follow deductively from axioms proven internally consistent through automated theorem proving.
 
-The measurement problem in quantum mechanics, how does definite outcome arise from superposition, becomes less mysterious in this framework because measurement is not collapse of wave function but rather a specific mode of presentation where the substrate appears as definite phenomenon within a reference frame. Different measurement contexts are different modes of presentation, not different ontological situations.
+## Refutation Guide
 
-## Relativity and Spacetime
+**[refutation.md](docs/refutation.md)**
 
-The axioms establish that spacetime coordinates apply only to phenomena and the substrate itself has no location or temporal position, which aligns with approaches in quantum gravity like loop quantum gravity or causal set theory where spacetime is emergent from more fundamental pre-geometric structure.
+A systematic analysis of how the formalization could be challenged or refuted, examining both internal logical attacks and external empirical falsification strategies. This guide identifies the formalization's critical axioms, explores what would constitute valid counterexamples, discusses the relationship between formal consistency and metaphysical truth, and outlines experimental approaches for testing the framework's predictions against substance-based alternatives. The document serves as methodological roadmap for rigorous evaluation of the formalization's claims, acknowledging that machine-verified consistency establishes logical possibility but not empirical actuality.
 
-The frame-dependence formalized in the gauge axioms parallels reference frame dependence in special relativity, where what counts as simultaneous or spatially separated depends on choice of frame, and the formalization shows this frame-dependence is compatible with underlying non-dual reality.
+## Technical Guide
 
-Block universe interpretations in relativity, where all times exist equally, find natural expression in this framework because the substrate is atemporal and temporal ordering is an emergent structure on phenomenal presentations. Past and present and future are perspectival distinctions within presentation rather than fundamental divisions.
+**[technical_guide.md](docs/technical_guide.md)**
 
-## Cognitive Science and Consciousness
+Comprehensive technical documentation for the Isabelle/HOL formalization contained in `The_Unique_Ontic_Substrate.thy`. This guide provides systematic explanation of the formal structure, verification methodology, extension mechanisms, and implementation details necessary for understanding, verifying, and potentially extending the formalization. The document walks through each section of the theory file including type declarations, axioms, lemmas, and theorems, explaining both the Isabelle/HOL syntax and the philosophical meaning. Topics covered include the five core axioms establishing existence, uniqueness, exhaustivity, presentation, and inseparability, proof strategies using automated methods like blast, auto, simp, and metis, the Nonduality theorem derivation showing all phenomena are inseparable from substrate, extensions covering causality, spacetime, emptiness, dependent arising, ownership, symmetry, concepts, information, and emergent time, verification methodology using Isabelle/jEdit and Nitpick model-finding, extension strategies for adding new axioms while maintaining consistency, common issues and solutions for type errors, proof failures, and performance, and theoretical guarantees including consistency within HOL's type theory and limitations of formal verification. This guide is essential for anyone wanting to verify the formalization independently, understand the technical foundations underlying the philosophical claims, extend the axiom system to additional domains, or learn how to formalize metaphysical systems in Isabelle/HOL. While basic familiarity with formal logic is helpful, the guide is written to be accessible to those new to theorem proving while providing sufficient detail for experienced Isabelle users.
 
-The hard problem of consciousness, how does subjective experience arise from objective matter, dissolves if we reverse the explanatory order. Consciousness is not produced by neural activity but neural activity is phenomenal presentation of substrate which is itself awareness.
 
-This aligns with integrated information theory approaches where consciousness is fundamental and physical processes are aspects of conscious experience rather than causes of it, and the formalization makes this logically precise and proves consistency.
+## Domain-Specific Academic Papers
 
-Predictive processing frameworks in cognitive science, where perception is active construction rather than passive reception, fit naturally here because phenomenal experience is presentation of substrate shaped by conceptual frameworks and prior expectations. Perception is substrate presenting itself through particular modes.
+### Quantum Mechanics and Physics
 
-The binding problem, how does brain unify diverse processing streams into coherent experience, becomes tractable because unity is not achieved by binding separate elements but unity is the substrate itself. Apparent diversity is multiple modes of presentation rather than genuinely separate processes requiring integration.
+**[qm_paper.md](docs/qm_paper.md)**
 
-## Philosophical Implications
+Detailed examination of the formalization's implications for quantum theory and foundations of physics, analyzing how the measurement problem becomes transition in substrate's mode of presentation, how quantum entanglement reflects intrinsically unified presentations of single substrate, how spacetime emerges as representational structure for phenomena, and how the emptiness axiom provides ontological interpretation of quantum indeterminacy. The paper addresses implementation requirements for operational physical theory and argues that quantum mechanics must seriously engage with this formally verified alternative to substance ontology.
 
-The formalization achieves maximum parsimony, an ontology containing exactly one fundamental entity, the substrate, and one fundamental relation, presentation, where everything else including causality and spacetime and information and concepts is structure within phenomenal presentation.
+### Artificial Intelligence and Machine Consciousness
 
-This is simpler than substance dualism which posits mind and matter as separate substances, simpler than materialism which struggles to account for consciousness, and simpler than idealism which struggles to account for intersubjective agreement and physical law. Occam's razor favors simpler theories when they are equally explanatory, and the formalization proves the simple non-dual ontology is internally consistent. Whether it is explanatorily adequate requires empirical investigation, but logical coherence is established.
+**[ai_paper.md](docs/ai_paper.md)**
 
-Nothing in the formalization contradicts empirical observation. It contradicts only metaphysical interpretations of observations, and the axioms are compatible with all experimental results in physics and cognitive science.
+Analysis of the formalization's radical implications for artificial intelligence, machine consciousness, and the hard problem of consciousness. The paper demonstrates how the emptiness axiom dissolves traditional questions about whether AI systems "really" understand or "genuinely" think by showing these distinctions presuppose essence-ontology the formalization excludes. Topics include dependent arising applied to computational emergence, information as non-reifying attribution, the substrate question and computational materialism, implementation requirements for AI architectures within presentation-ontology, and implications for AGI, consciousness upload, and AI rights.
 
-Quantum experiments and relativity experiments and neuroscience findings about neural correlates of consciousness all remain valid as phenomenal regularities, and the formalization reinterprets their ontological status, presentation of substrate rather than independent substance, without denying the phenomena themselves. This makes the theory empirically adequate in the sense that it accounts for all observations while offering simpler metaphysical foundation. It is not falsifiable by experiment because any experimental result can be interpreted within the framework, but this is true of all ontological theories, and empirical data underdetermines ontology. The choice between frameworks is made on grounds of coherence and parsimony and explanatory unification.
+### Neuroscience and Psychology
 
-The non-appropriation axioms establish that ownership is conventional, which has implications for distributive justice and property rights and resource allocation. If ownership lacks ultimate metaphysical foundation then claims about natural rights to property become less tenable, and ownership arrangements are justified pragmatically by their consequences rather than by tracking some fundamental fact.
+**[nueroscience_psychology_paper.md](docs/nueroscience_psychology_paper.md)**
 
-The inseparability of all phenomena from one substrate suggests an ethics of recognition similar to contemplative approaches, where harm to others is harm to presentations of the substrate that is one's own nature and compassion arises naturally from recognizing no ultimate separation exists. However the formalization does not determine particular ethical conclusions. It provides metaphysical foundation but leaves open how to navigate conventional reality, and the axioms establish that distinctions are real at the phenomenal level even while unified at substrate level. Ethics operates in the phenomenal domain where distinctions matter practically even if not ultimately.
+Comprehensive exploration of implications for neuroscience and psychology, requiring reconceptualization of the brain-consciousness relationship, the nature of psychological suffering, the status of the self, and mechanisms of therapeutic change. The paper examines how neural correlates reflect coordination among presentations rather than production of consciousness by neural substrate, how the binding problem dissolves because unity is ontologically prior to multiplicity, how psychological suffering arises from reifying essence-less presentations, and how therapeutic interventions work by altering conditions from which presentations arise.
 
-The formalization suggests science can investigate substrate indirectly through study of phenomenal presentations and their patterns, where physical laws describe regularities in how substrate presents itself and these laws are discovered empirically but reflect the inherent structure of presentation.
+### Ethics and Political Philosophy
 
-This resolves potential tension between scientific realism and non-dualism because scientific theories are not simply conventional but track real structure in presentation, and atoms and fields and spacetime are phenomenal realities even though they are presentations of substrate rather than self-standing substances.
+**[ethics_and_political_philosophy_paper.md](docs/ethics_and_political_philosophy_paper.md)**
 
-The framework also suggests limits to scientific knowledge. Science investigates phenomenal structure and cannot access substrate directly because every act of investigation is itself phenomenal, and the substrate is the condition for investigation rather than possible object of investigation. This is not mysticism but recognition of scope, and science can be complete regarding phenomenal structure while remaining silent about substrate.
+Examination of profound implications for ethics and political philosophy, requiring reconceptualization of moral responsibility, personal identity, rights, justice, property, political boundaries, power, and social transformation. The paper addresses how personhood without essence affects rights theory, how responsibility without libertarian free will grounds legal accountability, how conventional ownership (formally proven in the "Non-Appropriation" section) transforms property theory, how political identities lacking essence affect representation and self-determination, and how recognition of ultimate non-separation between individuals affects political philosophy.
+
+### Biology and Medicine
+
+**[biology_and_medicine_paper.md](docs/biology_and_medicine_paper.md)**
+
+Analysis of implications for understanding life, organisms, disease, health, medical treatment, and the relationship between biology and medicine. The paper reconceives organisms as phenomenal presentation-patterns arising dependently from conditions rather than bounded substantial entities, boundaries as phenomenal conventions rather than ontological absolutes, disease and health as presentation-patterns arising from conditions, treatment as intervention in phenomenal-level causal patterns, healing as emergence of new presentation-patterns, and death as transformation rather than annihilation of essential organism-substance.
+
+### Mathematics and Logic
+
+**[mathematics_and_logic_paper.md](docs/mathematics_and_logic_paper.md)**
+
+Unique reflexive examination where formal mathematical system analyzes its own ontological foundations. The paper explores how mathematical objects are phenomenal presentations lacking essence rather than Platonic abstract entities, how mathematical truth is structural consistency within phenomenal presenting rather than correspondence to Platonic forms, how proof is phenomenal construction showing conclusions arising from premises, how formal verification establishes consistency within systems, and the peculiar situation where the formalization applies to itself, creating rich metamathematical structure.
+
+### Law and Legal Philosophy
+
+**[law_legal_philosophy.md](docs/law_legal_philosophy.md)**
+
+Analysis of implications for law and legal philosophy, requiring reconceptualization of legal personhood, criminal responsibility, property rights, contracts, legal authority, jurisdiction, and constitutional foundations. The paper examines how the "Non-Appropriation" section's formal proof that ownership is conventional transforms property law, how legal personality is phenomenal presentation arising from conditions, how criminal responsibility is causal connection rather than libertarian free will, how legal authority is conventional power rather than essential right-to-rule, and how law itself is phenomenal institutional practice rather than essential normative order.
+
+## Practical Guide
+
+**[laypersons_guide.md](docs/laypersons_guide.md)**
+
+Accessible introduction explaining non-duality in everyday language and providing experiential practices for direct verification. Written for readers without mathematical or philosophical background, this guide bridges formal proof and lived experience. Topics include what non-duality means using accessible metaphors, how understanding shifts everyday experience of thoughts, emotions, relationships, and change, impacts on society including mental health and conflict resolution, detailed contemplative practices for investigating the observer and exploring emptiness of self, and practical applications for difficult conversations, anxiety, and self-judgment.
+
+---
+## DECLARATIONS
+
+**Availability of data and material**
+
+All Isabelle/HOL theory files (.thy) constituting the formal proofs presented in this work are available in a public repository [here](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/tree/main/isabelle). The files include: NonDuality.thy (Empirical Non-Duality), Advaita_Vedanta.thy, Dzogchen.thy, and Daoism.thy. All formalizations have been verified for consistency using Isabelle/HOL 2025. The code is released under the BSD-3-Clause license with documentation under Creative Commons Attribution 4.0 International (CC BY 4.0). Complete verification logs and model-checking results via Nitpick are included in the repository.
+
+**Competing interests**
+
+The author declares no competing interests, financial or otherwise, related to this work.
+
+**Funding**
+
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors. The work was conducted independently without institutional support.
+
+**Authors' contributions**
+
+Matthew Scherf is the sole author responsible for all aspects of this work, including conceptualization, formal axiomatization, machine verification, analysis, and manuscript preparation.
+
+**Acknowledgements**
+
+The author acknowledges the use of Claude (Anthropic) as an AI research assistant in developing and refining the formal axiomatizations, exploring philosophical implications, and conducting literature review. The author also acknowledges the open-source Isabelle/HOL community for providing the proof assistant infrastructure that made this verification possible, and the contemplative traditions of Advaita Vedanta, Dzogchen, and Daoism whose insights inspired this formalization.
+
+---
 
 ## Citation
 
@@ -235,10 +262,10 @@ If you reference this work, please cite as follows.
 ```bibtex
 @misc{empirical2025,
   author = {Scherf, Matthew},
-  title = {Formal Axiomatization of Empirical Non-Duality: Machine-Verified Scientific Framework},
+  title = {The Unique Ontic Substrate},
   year = {2025},
   doi = {10.5281/zenodo.17388701},
-  url = {https://github.com/matthew-scherf/Empirical-NonDuality},
+  url = {https://github.com/matthew-scherf/The-Unique-Ontic-Substrate},
   note = {Isabelle/HOL formalization, verified October 2025}
 }
 ```
@@ -254,8 +281,6 @@ The formalization (`.thy` files) is released under BSD-3-Clause license. Documen
 *The unique ontic substrate*
 
 Empirically grounded. Logically verified. Scientifically rigorous.
-
-**Verified. Consistent. True.**
 
 ---
 

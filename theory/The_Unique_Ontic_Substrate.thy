@@ -2,7 +2,7 @@ theory The_Unique_Ontic_Substrate
   imports Main
 begin
 (*
-  Complete Formal Axiomatization of Emprical Non Duality
+  Complete Formal Axiomatization of NonDuality
   Copyright (C) 2025 Matthew Scherf
   
   This work is licensed under:
@@ -12,11 +12,11 @@ begin
   First verified: October 19, 2025
   DOI: https://doi.org/10.5281/zenodo.17388701
   
-  Citation: Scherf, M. (2025). Complete Formal Axiomatization of Empirical Non Duality:
+  Citation: Scherf, M. (2025). The Unique Ontic Substrate:
   Machine-Verified Non-Dual Metaphysics. Isabelle/HOL formalization.
 *)
 (*
-  EMPIRICAL NON-DUALITY 
+  The Unique Ontic Substrate
   Isabelle/HOL 2025
 
   Core:
