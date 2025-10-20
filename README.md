@@ -28,7 +28,7 @@ Nevertheless, in principle the theory could be refuted through several paths. Th
 
 **Availability of data and material**
 
-All Isabelle/HOL theory files (.thy) constituting the formal proofs presented in this work are available in a public repository [here](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/tree/main/isabelle). The files include: NonDuality.thy (Empirical Non-Duality), Advaita_Vedanta.thy, Dzogchen.thy, and Daoism.thy. All formalizations have been verified for consistency using Isabelle/HOL 2025. The code is released under the BSD-3-Clause license with documentation under Creative Commons Attribution 4.0 International (CC BY 4.0). Complete verification logs and model-checking results via Nitpick are included in the repository.
+All Isabelle/HOL theory files (.thy) constituting the formal proofs presented in this work are available [here](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/tree/main/isabelle). All formalizations have been verified for consistency using Isabelle/HOL 2025. The code is released under the BSD-3-Clause license with documentation under Creative Commons Attribution 4.0 International (CC BY 4.0). Complete verification logs and model-checking results via Nitpick are included in the repository.
 
 **Competing interests**
 
