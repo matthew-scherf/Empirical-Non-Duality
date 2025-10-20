@@ -54,7 +54,7 @@ isabelle build -d . -v The_Unique_Ontic_Substrate
 
 ```
 
-Successful verification produces output confirming all theorems check. The [verification documentation](docs/verification.md) contains proof logs and screenshots documenting successful runs. The Nitpick model finder was used with `user_axioms = true` over domain cardinalities 1 through 5 to check for counterexamples. None were found within these finite scopes.
+Successful verification produces output confirming all theorems check. The Nitpick model finder was used with `user_axioms = true` over domain cardinalities 1 through 5 to check for counterexamples. None were found within these finite scopes.
 
 ## Axioms
 
