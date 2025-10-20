@@ -14,7 +14,7 @@ Philosophy became executable code on October 19, 2025. A complete axiomatization
 
 The theory establishes that exactly one substrate exists, all phenomena are presentations of it, and nothing exists independently. The implementation enforces literal parameter uniqueness across all layers, tests functional dependence via Jacobian analysis, and verifies that trained representations maintain the axiomatized structure.
 
-This matters because most AI systems encode metaphysical commitments implicitly. Neural networks assume concepts have fixed essences. Embeddings treat meaning as intrinsic properties. These aren't neutral engineering choices, they're philosophical positions that shape what biases systems inherit and what decisions they can explain. Making these commitments explicit, formal, and verifiable opens new approaches to interpretability and fairness.
+Most AI systems encode metaphysical commitments implicitly, and neural networks assume concepts have fixed essences. Embeddings treat meaning as intrinsic properties. Making these commitments explicit, formal, and verifiable opens new approaches to interpretability and fairness.
 
 ```
 Training with integrated axiom constraints...
@@ -27,33 +27,27 @@ Final inseparability: 0.693
 Training complete - axioms maintained throughout.
 ```
 
-The numbers tell the story. A neural network starts with random weights, treating representations as independent entities. Inseparability from the substrate measures near zero. Then something shifts. By epoch 5, inseparability jumps to 0.388. The network discovers that routing information through the substrate parameter helps with the classification task. This isn't programmed, it's learned.
+The numbers tell the story. A neural network starts with random weights, treating representations as independent entities. Inseparability from the substrate measures near zero. Then something shifts, and by epoch 5, inseparability jumps to 0.388. The network discovers that routing information through the substrate parameter helps with the classification task, an this isn't programmed, it's learned.
 
-By epoch 10, the pattern is clear: 88.5% accuracy while inseparability strengthens to 0.685. The network simultaneously solves the task and grounds its solutions in non-dual structure. These aren't competing objectives, they're mutually reinforcing.
+By epoch 10, the pattern is clear: 88.5% accuracy while inseparability strengthens to 0.685. The network simultaneously solves the task and grounds its solutions in non-dual structure. These objectives are mutually reinforcing.
 
 At epoch 15, perfect classification with 69.3% inseparability. Every sample correctly labeled while learned representations maintain strong connection to Ω. The causal time constraint improves throughout, temporal indices learning to respect the directed graph structure. Three separate commitments from the formal theory, maintained simultaneously, compatible with perfect task accuracy.
 
+This wasn't guaranteed. The architecture could ignore Ω entirely, solving the task through presentation operators while treating the substrate as irrelevant. The inseparability loss encourages substrate dependence, but the network could accept that penalty and optimize purely for accuracy, yet, instead, gradient descent finds solutions satisfying both.
 
-This wasn't guaranteed. The architecture could ignore Ω entirely, solving the task through presentation operators while treating the substrate as irrelevant. The inseparability loss encourages substrate dependence, but the network could accept that penalty and optimize purely for accuracy. Instead, gradient descent finds solutions satisfying both.
-
-The network learned to route information through a single shared parameter across 256 substrate dimensions, 64 input dimensions, and thousands of parameters. This parsimony wasn't forced by traditional parameter tying. The substrate appears as input to presentation operators, but the network could learn to ignore it. Instead, inseparability strengthens during training.
+The network learned to route information through a single shared parameter across 256 substrate dimensions, 64 input dimensions, and thousands of parameters. The substrate appears as input to presentation operators, but the network could learn to ignore it. Instead, inseparability strengthens during training.
 
 This suggests architectures enforcing metaphysical constraints may discover useful inductive biases. Requiring phenomena to present from a unique substrate might be equivalent to certain forms of regularization, providing implicit constraints that improve generalization. The formal axioms compile to architectural decisions that shape the hypothesis space.
 
 The time monotonicity reinforces this. The causal graph defines 107 directed edges among 50 phenomena. The emergent time parameter T learns to respect these constraints without explicit supervision, just a soft penalty for violations. The system learns temporal structure coherent with causal structure, implementing the Time_monotone axiom.
 
-## Implications
+When inseparability goes from near-zero to 0.693 over 15 epochs while accuracy goes from 50% to 100%, you're watching two things simultaneously: a network learning to classify and a network learning to be non-dual. The formal axioms emerge through learning.
 
-When inseparability goes from near-zero to 0.693 over 15 epochs while accuracy goes from 50% to 100%, you're watching two things simultaneously: a network learning to classify and a network learning to be non-dual. The formal axioms aren't external constraints, they're properties that emerge through learning.
-
-These results are preliminary. A synthetic binary classification task on 200 samples doesn't prove scalability. But it demonstrates the proof of concept: formal axioms from Isabelle/HOL can be operationalized as PyTorch losses, training under these constraints produces systems maintaining axiomatized structure, and the learned representations are measurably non-dual.
+These results are preliminary, and a synthetic binary classification task on 200 samples doesn't prove scalability. But it demonstrates the proof of concept, which is that formal axioms from Isabelle/HOL can be operationalized as PyTorch losses, training under these constraints produces systems maintaining axiomatized structure, and the learned representations are measurably non-dual.
 
 The trained system has philosophical commitments with measurable computational effects. You can query inseparability scores, trace decisions through projection onto span(Ω), and measure what fraction of each representation comes from substrate versus coordinate components. The axioms aren't aspirational, they're maintained properties of learned weights.
 
-This is what it looks like when philosophy becomes executable and execution validates philosophy. The training curve shows formal metaphysics constraining neural architectures without sacrificing performance. Non-dual structure emerges bottom-up through gradient descent finding that ontological parsimony correlates with inductive efficiency.
-
-The numbers mean: it works. The axioms hold. The theory compiles. Non-dual metaphysics runs as AI.
-
+The training curve shows formal metaphysics constraining neural architectures without sacrificing performance. Non-dual structure emerges bottom-up through gradient descent finding that ontological parsimony correlates with inductive efficiency.
 
 ---
 
