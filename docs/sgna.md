@@ -444,14 +444,14 @@ def run_all_tests():
     print(f"  • Bias detection operational")
     print(f"  • Decision tracing functional: {avg_insep:.1%} traceback quality")
     
-    print("\nWhat this means:")
+    print("\nMeaning:")
     print("  • The architecture implements the formal theory correctly")
     print("  • All axioms (A1-A5, C1-C3, S1-S2) are verified computationally")
     print("  • The system can learn while maintaining non-dual structure")
     print("  • Bias can be identified at coordinate level (removable)")
     print("  • Decisions trace back to substrate (transparent)")
     
-    print("\nNext Steps:")
+    print("\nExtension:")
     print("  • Try on real datasets (MNIST, text corpora)")
     print("  • Compare bias metrics to standard embeddings")
     print("  • Test adversarial robustness")
