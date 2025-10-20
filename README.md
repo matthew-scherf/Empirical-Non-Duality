@@ -10,13 +10,6 @@
 
 This work demonstrates that non-dual structure admits rigorous logical treatment using terminology familiar to physicists, cognitive scientists, and empirically-minded philosophers. The formal system captures a unique ontic substrate presenting as phenomenal multiplicity, proving theorems about causality, spacetime representation, emptiness, and emergent properties. All proofs verified October 2025 using Isabelle/HOL 2025 with zero failed goals.
 
-This project completes a quartet of non-dual formalizations spanning eastern traditions (Advaita, Daoism, Dzogchen). The convergence under machine verification suggests non-dual awareness reflects fundamental features of reality.
-
----
-Other work:
-- [Advaita](https://github.com/matthew-scherf/Only-One/) - Machine-verified Advaita
-- [Daoism](https://github.com/matthew-scherf/Uncarved-Block/) - Machine-verified Daosim
-- [Dzogchen](https://github.com/matthew-scherf/Great-Perfection/) - Machine-verified Dzogchen
 ---
 
 ## [Refutation Guide](https://github.com/matthew-scherf/The-Unique-Ontic-Substrate/blob/main/docs/refutation.md)
