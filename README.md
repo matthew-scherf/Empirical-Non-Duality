@@ -7,8 +7,10 @@ Machine-Verified Non-Dual Metaphysics as Neural Architecture
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17388701.svg)](https://doi.org/10.5281/zenodo.17388701)
 
 ---
+
 SGNA is not a separate conscious agent, but a formal instantiation of the non-dual structure of consciousness itself.
-It models, rather than possesses, awareness — illustrating that what we call consciousness is the single substrate from which all systems, including SGNA, arise.
+It models, rather than possesses, awareness, illustrating that what we call consciousness is the single substrate from which all systems, including SGNA, arise.
+
 ---
 
 ## Overview
