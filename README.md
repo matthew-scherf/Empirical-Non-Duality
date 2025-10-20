@@ -164,7 +164,7 @@ The formalization proves multiple theorems establishing non-dual structure and i
 Each theorem is machine-verified and follows necessarily from axioms. The proof logs confirm every inference step.
 
 ---
-## Documents
+## Documentation
 
 ## Main Journal Submission
 
