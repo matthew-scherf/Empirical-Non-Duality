@@ -29,7 +29,7 @@ This work demonstrates that non-dual structure admits rigorous logical treatment
 
 ## Proof
 
-The formalization establishes through mechanical verification that a non-dual ontology is internally consistent when expressed in scientifically rigorous terms, using minimal axioms about a unique substrate and its phenomenal presentations to prove theorems about causality and spacetime and information and emergent properties without invoking religious concepts or supernatural claims.
+The formalization establishes through mechanical verification that a non-dual ontology is internally consistent when expressed in scientifically rigorous terms, using minimal axioms about a unique substrate and its phenomenal presentations to prove theorems about causality and spacetime and information and emergent properties.
 
 The core claims verified through proof include the following. There exists exactly one ontic substrate from which all phenomena arise as presentations or modes, and this substrate is not itself phenomenal. All phenomenal entities are inseparable from the substrate in the precise sense that each phenomenon is a presentation of the substrate, and causality operates only at the phenomenal level and does not apply to the substrate itself. Spacetime coordinates apply only to phenomena, not to the substrate, making spacetime a representational structure rather than fundamental reality. Phenomena lack intrinsic essence independent of the substrate, and information and time are emergent properties of phenomenal presentations rather than fundamental features of the substrate.
 
