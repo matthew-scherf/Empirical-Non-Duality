@@ -104,10 +104,10 @@ Scherf, M. (2025). [Document Title]. The Unique Ontic Substrate https://github.c
 
 For those encountering non-duality for the first time, the suggested reading order is:
 
-1. Start with **laypersons_guide.md** to understand core concepts and begin experiential investigation
-2. Read **refutation.md** to understand the formalization's logical structure and how it could be challenged
+1. Start with laypersons_guide.md to understand core concepts and begin experiential investigation
+2. Read refutation.md to understand the formalization's logical structure and how it could be challenged
 3. Explore domain-specific papers based on your interests and background
-4. Examine **paper.md** (the main journal submission) for comprehensive technical treatment
+4. Examine paper.md (the main journal submission) for comprehensive technical treatment
 5. Return to the core formalization in the repository root to examine the formal proofs underlying all claims
 
 For specialists coming from specific fields, starting with the relevant domain paper may be more natural, with the layperson's guide providing experiential dimension that complements formal understanding.
