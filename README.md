@@ -17,7 +17,6 @@ This work demonstrates that non-dual structure admits rigorous logical treatment
 ## Contents
 
 - [Proof](#proof)
-- [Terminology](#terminology)
 - [Verification](#verification)
 - [Axioms](#axioms)
 - [Theorems](#theorems)
@@ -27,20 +26,15 @@ This work demonstrates that non-dual structure admits rigorous logical treatment
 - [License](#license)
 
 ---
+#Proof
 
-## Proof
+This directory contains the first machine-verified formal axiomatization of non-dual ontology, establishing through rigorous logical proof that reality consists of a unique substrate from which all phenomena arise inseparably. Unlike previous philosophical treatments of non-duality existing as contemplative insights or informal arguments, this work employs the Isabelle/HOL proof assistant to establish mathematical certainty for core metaphysical claims, rendering them beyond reasonable dispute within their axiomatic framework. The verification software confirms that the axiom system is internally consistent, the theorems follow necessarily from the axioms, and the entire logical structure is sound according to higher-order logic.
 
-The formalization establishes through mechanical verification that a non-dual ontology is internally consistent, using minimal axioms about a unique substrate and its phenomenal presentations to prove theorems about causality and spacetime and information and emergent properties.
+The formalization proves that exactly one ontic substrate exists from which all phenomena arise as presentations or modes, that this substrate is not itself phenomenal but transcends phenomenal categories, that every phenomenal entity is inseparable from the substrate where inseparability means the phenomenon is a presentation of the substrate, that causality operates only at the phenomenal level with substrate standing outside causal relations, that spacetime coordinates apply only to phenomena making spacetime representational structure rather than fundamental reality, that phenomena lack intrinsic essence independent of substrate, and that information and time emerge as properties of phenomenal presentations rather than constituting fundamental features of substrate itself. These are not philosophical speculations but proven mathematical theorems verified by automated proof-checking.
 
-The core claims verified through proof include that there exists exactly one ontic substrate from which all phenomena arise as presentations or modes, and this substrate is not itself phenomenal. Further, all phenomenal entities are inseparable from the substrate in the precise sense that each phenomenon is a presentation of the substrate, and causality operates only at the phenomenal level and does not apply to the substrate itself. Spacetime coordinates apply only to phenomena, not to the substrate, making spacetime a representational structure rather than fundamental reality. Phenomena lack intrinsic essence independent of the substrate, and information and time are emergent properties of phenomenal presentations rather than fundamental features of the substrate.
+The central Nonduality theorem establishes that for any phenomenon that phenomenon is inseparable from the unique substrate, with the proof proceeding necessarily from axioms stating all phenomena present the substrate and exactly one substrate exists, such that given these minimal assumptions about presentation and uniqueness every phenomenon stands in the inseparability relation to substrate as matter of logical necessity. The formalization demonstrates that non-dual metaphysics admits complete rigorous treatment using same formal methods applied to mathematics and verified software systems, transforming ancient contemplative insights into modern logical structure proven internally consistent.
 
-These are proven theorems following necessarily from stated axioms. The verification software confirms logical consistency. This is a mathematical structure compatible with empirical observation and scientific methodology.
-
-The formalization proves non-duality as inseparability of phenomena from substrate, stating that for any phenomenon, that phenomenon is inseparable from the unique substrate, where inseparability is defined precisely as the relation holding when the phenomenon is a presentation of the substrate. The theorem follows from the axioms that all phenomena present the substrate and that exactly one substrate exists. This is a rigorous logical result, and given the axioms about presentation and uniqueness, every phenomenon necessarily stands in the inseparability relation to the substrate. 
-
-## Terminology
-
-The choice of terminology reflects genuine parallels with scientific concepts. The substrate-presentation relation parallels the relationship between quantum fields and particle excitations, gauge invariance in physics, where different coordinate systems describe the same reality, directly parallels the gauge axioms in the formalization, and emergence of time from more fundamental atemporal structure appears in quantum gravity research. The formal structure genuinely captures patterns appearing in both contemplative investigation and scientific research, and the formalization proves that these patterns are logically coherent and mutually consistent.
+The terminology reflects genuine structural parallels across domains where the substrate-presentation relation captures how quantum fields relate to particle excitations in physics, how gauge transformations in field theory preserve underlying reality while changing mathematical representation, and how time emerges from atemporal structure in quantum gravity approaches, with the formal axioms proving these patterns are logically coherent and mutually consistent whether discovered through contemplative investigation or scientific research. The formalization provides unified framework integrating insights from Advaita Vedanta, Dzogchen Buddhism, Daoist philosophy, quantum mechanics, consciousness studies, and foundations of physics, demonstrating through machine verification that these diverse traditions and disciplines describe the same underlying logical structure of reality as presentations arising from unique substrate.
 
 ---
 
