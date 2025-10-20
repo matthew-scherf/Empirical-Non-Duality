@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this formalization, please cite it as below."
 type: software
-title: "Formal Axiomatization of Empirical Non-Duality: Machine-Verified Scientific Framework"
+title: "The Unique Ontic Substrate"
 abstract: "Complete formal axiomatization of non-dual metaphysics using scientifically rigorous terminology in Isabelle/HOL 2025. Proves consistency of substrate ontology with phenomenal presentations, establishing non-dualism through empirical concepts like gauge invariance, emergent spacetime, and information theory. Fourth in a series completing the contemplative-scientific bridge."
 authors:
   - family-names: "Scherf"
     given-names: "Matthew"
-repository-code: "https://github.com/matthew-scherf/The-Unique-Ontic-Substrate-"
+repository-code: "https://github.com/matthew-scherf/The-Unique-Ontic-Substrate"
 keywords:
   - non-dualism
   - substrate ontology
@@ -39,11 +39,11 @@ references:
       - family-names: "Scherf"
         given-names: "Matthew"
     year: 2025
-    repository-code: "https://github.com/matthew-scherf/Daoism"
+    repository-code: "https://github.com/matthew-scherf/Uncarved-Block"
   - type: software
     title: "Formal Axiomatization of Dzogchen"
     authors:
       - family-names: "Scherf"
         given-names: "Matthew"
     year: 2025
-    repository-code: "https://github.com/matthew-scherf/Dzogchen"
+    repository-code: "https://github.com/matthew-scherf/Great-Perfection"
