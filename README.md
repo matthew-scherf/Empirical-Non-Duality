@@ -66,9 +66,14 @@ The formalization rests on minimal axioms organized into core ontology and exten
 The foundation establishes existence, uniqueness, and presentation structure.
 
 -`A1` (Existence) - At least one substrate exists. This ensures the ontology is non-vacuous.
--`A2` (Uniqueness) - If two entities are both substrates, they are identical. This establishes monism at the fundamental level.
+
+-`A2` (Uniqueness) - If two entities are both substrates, they are identical. This establishes monism at the fundamental
+level.
+
 -`A3` (Exhaustivity) - Every entity is either phenomenal or substrate. This creates a clean ontological dichotomy.
+
 -`A4` (Presentation) - Every phenomenon presents every substrate. Combined with uniqueness, this means every phenomenon presents the unique substrate.
+
 -`A5` (Inseparability Definition) - Two entities are inseparable when one is a phenomenon presenting the substrate and the other is that substrate. This makes inseparability precise and computable.
 
 From these axioms we derive that exactly one substrate exists (proven in unique_substrate lemma). We can define this unique substrate as Ω (TheSubstrate). The Nonduality theorem follows necessarily.
