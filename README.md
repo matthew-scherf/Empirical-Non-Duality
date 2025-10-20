@@ -69,18 +69,12 @@ The formalization (`.thy` files) is released under BSD-3-Clause license. Documen
 
 ---
 
-**Ω**
-
-*The unique ontic substrate*
-
-Empirically grounded. Logically verified. Scientifically rigorous.
+**Ω** *The unique ontic substrate*
 
 ---
 
 ∃!s. Substrate s ∧ ∀p. Phenomenon p → Presents p s
 
 **All phenomena present one substrate**
-
-Four formalizations. Four frameworks. One structure.
 
 ---
