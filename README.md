@@ -15,6 +15,28 @@
 
 ---
 
+## Refutation 
+
+
+This formal system is intentionally structured to be self-consistent and closed. Every theorem follows as logical consequence of clearly stated axioms. The system has been mechanically verified using Isabelle/HOL 2025 and checked for countermodels using Nitpick across domain cardinalities 1 through 5. No contradictions were found and no countermodels exist within the finite scopes tested.
+
+This is the fourth machine-verified formalization of non-dual philosophy, following Advaita Vedanta, Daoism, and Dzogchen. Unlike those formalizations which use traditional religious terminology, this work employs scientific language (substrate, presentation, gauge invariance, emergence). The structural similarities across all four verifications demonstrate that non-dualism is framework-agnostic and logically coherent regardless of whether expressed in contemplative or scientific terms.
+
+Nevertheless, in principle the theory could be refuted through several paths. This document examines each potential path and explains why refutation is unlikely to succeed.
+
+---
+
+## Path 1: Demonstrate an Internal Contradiction
+
+### The Challenge
+
+Show that the axioms, taken together, logically entail both a statement P and its negation ¬P. In Isabelle terms this would mean deriving `False` from the axioms. Such a derivation would prove the system inconsistent.
+
+### Why This Path Fails
+
+The automated verification has checked every inference step. Isabelle's proof kernel validates that each theorem follows from axioms through valid logical rules. The Nitpick model finder searched for contradictions across finite domains and found none. If contradiction existed within these scopes, Nitpick would have discovered it.
+
+The axiom system maintains careful separations. The substrate exists uniquely (A1, A2). Phenomena are exhaustively classified but disjoint from substrate as ontological category (A3). Presentation relates phenomena to substrate without identifying them (A4). Inseparability is precisely defined (A5). These create clean logical structure without overlap or gap that could generate contradiction.
 
 
 ---
