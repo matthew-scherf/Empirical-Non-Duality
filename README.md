@@ -8,7 +8,7 @@
 
 [Submitted to Isabelle AFP](https://www.isa-afp.org/webapp/submission/?id=2025-10-19_11-47-47_483)
 
-This work demonstrates that non-dual structure admits rigorous logical treatment. The formal system captures a unique ontic substrate presenting as phenomenal multiplicity, proving theorems about causality, spacetime representation, emptiness, and emergent properties. All proofs verified October 2025 using Isabelle/HOL 2025 with zero failed goals.
+This work demonstrates that non-dual structure admits rigorous logical treatment. The formal system captures a unique ontic substrate presenting as phenomenal multiplicity, proving theorems about causality, spacetime representation, emptiness, and emergent properties. All proofs verified October 2025 using Isabelle/HOL 2025.
 
 ---
 
