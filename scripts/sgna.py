@@ -6,14 +6,9 @@ Combines theoretical rigor with practical implementation.
 This operationalizes axioms from the machine-verified Isabelle/HOL theory
 "The_Unique_Ontic_Substrate" with stronger conformance checks.
 
-Key improvements:
-- True singleton Ω via registry (not fragile global state)
-- Functional dependence via Jacobian (not just cosine similarity)
-- Rigorous gauge invariance tests with orthogonal transforms
-- Integrated causality and emergent time
-- Mathematically clean projections
 
-Run: python sgna_enhanced.py
+
+Run: python sgna.py
 CPU-only, synthetic data, 3-5 minutes total.
 """
 
