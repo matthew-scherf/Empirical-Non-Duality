@@ -14,6 +14,13 @@ The primary academic paper submitted for journal publication, titled "Machine-Ve
 
 A systematic analysis of how the formalization could be challenged or refuted, examining both internal logical attacks and external empirical falsification strategies. This guide identifies the formalization's critical axioms, explores what would constitute valid counterexamples, discusses the relationship between formal consistency and metaphysical truth, and outlines experimental approaches for testing the framework's predictions against substance-based alternatives. The document serves as methodological roadmap for rigorous evaluation of the formalization's claims, acknowledging that machine-verified consistency establishes logical possibility but not empirical actuality.
 
+## Technical Guide
+
+**[technical_guide.md](technical_guide.md)**
+
+Comprehensive technical documentation for the Isabelle/HOL formalization contained in `The_Unique_Ontic_Substrate.thy`. This guide provides systematic explanation of the formal structure, verification methodology, extension mechanisms, and implementation details necessary for understanding, verifying, and potentially extending the formalization. The document walks through each section of the theory file including type declarations, axioms, lemmas, and theorems, explaining both the Isabelle/HOL syntax and the philosophical meaning. Topics covered include the five core axioms establishing existence, uniqueness, exhaustivity, presentation, and inseparability, proof strategies using automated methods like blast, auto, simp, and metis, the Nonduality theorem derivation showing all phenomena are inseparable from substrate, extensions covering causality, spacetime, emptiness, dependent arising, ownership, symmetry, concepts, information, and emergent time, verification methodology using Isabelle/jEdit and Nitpick model-finding, extension strategies for adding new axioms while maintaining consistency, common issues and solutions for type errors, proof failures, and performance, and theoretical guarantees including consistency within HOL's type theory and limitations of formal verification. This guide is essential for anyone wanting to verify the formalization independently, understand the technical foundations underlying the philosophical claims, extend the axiom system to additional domains, or learn how to formalize metaphysical systems in Isabelle/HOL. While basic familiarity with formal logic is helpful, the guide is written to be accessible to those new to theorem proving while providing sufficient detail for experienced Isabelle users.
+
+
 ## Domain-Specific Academic Papers
 
 ### Quantum Mechanics and Physics
