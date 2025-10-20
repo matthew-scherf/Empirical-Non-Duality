@@ -65,16 +65,16 @@ The formalization rests on minimal axioms organized into core ontology and exten
 
 The foundation establishes existence, uniqueness, and presentation structure.
 
--`A1` (Existence). At least one substrate exists. This ensures the ontology is non-vacuous.
+`A1` (Existence). At least one substrate exists. This ensures the ontology is non-vacuous.
 
--`A2` (Uniqueness). If two entities are both substrates, they are identical. This establishes monism at the fundamental
+`A2` (Uniqueness). If two entities are both substrates, they are identical. This establishes monism at the fundamental
 level.
 
--`A3` (Exhaustivity). Every entity is either phenomenal or substrate. This creates a clean ontological dichotomy.
+`A3` (Exhaustivity). Every entity is either phenomenal or substrate. This creates a clean ontological dichotomy.
 
--`A4` (Presentation). Every phenomenon presents every substrate. Combined with uniqueness, this means every phenomenon presents the unique substrate.
+`A4` (Presentation). Every phenomenon presents every substrate. Combined with uniqueness, this means every phenomenon presents the unique substrate.
 
--`A5` (Inseparability Definition). Two entities are inseparable when one is a phenomenon presenting the substrate and the other is that substrate. This makes inseparability precise and computable.
+`A5` (Inseparability Definition). Two entities are inseparable when one is a phenomenon presenting the substrate and the other is that substrate. This makes inseparability precise and computable.
 
 From these axioms we derive that exactly one substrate exists (proven in `unique_substrate` lemma). We can define this unique substrate as Ω (TheSubstrate). The Nonduality theorem follows necessarily.
 
@@ -82,11 +82,11 @@ From these axioms we derive that exactly one substrate exists (proven in `unique
 
 Causality is restricted to the phenomenal level.
 
--`C1` Causal relations hold only between phenomena, never involving the substrate.
+`C1` Causal relations hold only between phenomena, never involving the substrate.
 
--`C2`Causality is irreflexive. No phenomenon causally precedes itself.
+`C2`Causality is irreflexive. No phenomenon causally precedes itself.
 
--`C3` Causality is transitive. If x precedes y and y precedes z, then x precedes z.
+`C3` Causality is transitive. If x precedes y and y precedes z, then x precedes z.
 
 This creates a strict partial order on phenomena while leaving the substrate outside causal structure. Time and causation are emergent features of phenomenal presentation rather than properties of fundamental reality.
 
@@ -94,9 +94,9 @@ This creates a strict partial order on phenomena while leaving the substrate out
 
 Spacetime coordinates apply only to phenomena, not to substrate.
 
--`S1` If an entity has coordinates in some reference frame, that entity is phenomenal.
+`S1` If an entity has coordinates in some reference frame, that entity is phenomenal.
 
--`S2` Gauge-related frames agree on whether entities have coordinates. Different coordinate systems are equivalent representations.
+`S2` Gauge-related frames agree on whether entities have coordinates. Different coordinate systems are equivalent representations.
 
 This formalizes the idea that spacetime is a representational structure for phenomena rather than fundamental container. The substrate is not located in space or time. Phenomena appear to occupy spacetime positions, but these positions are frame-dependent representations rather than intrinsic properties.
 
@@ -124,9 +124,9 @@ Phenomena arise in patterns, but these patterns unfold within the substrate rath
 
 Ownership is conventional, not ontological.
 
--`Ownership_Conventional` If an agent owns an entity, that entity is phenomenal and conventionally valid.
+`Ownership_Conventional` If an agent owns an entity, that entity is phenomenal and conventionally valid.
 
--`No_Ontic_Ownership` Owned entities are inseparable from substrate and lack essence. Ownership is a useful fiction for navigating conventional reality but has no ultimate metaphysical status.
+`No_Ontic_Ownership` Owned entities are inseparable from substrate and lack essence. Ownership is a useful fiction for navigating conventional reality but has no ultimate metaphysical status.
 
 This has implications for ethics and social organization. Property rights and ownership claims are pragmatically justified conventions rather than fundamental facts about reality.
 
@@ -134,9 +134,9 @@ This has implications for ethics and social organization. Property rights and ow
 
 Gauge transformations preserve presentation structure.
 
--`Act_Closed` Gauge actions on phenomena produce phenomena.
+`Act_Closed` Gauge actions on phenomena produce phenomena.
 
--`Act_Preserves_Presentation` If a phenomenon presents the substrate, its gauge transform also presents the substrate.
+`Act_Preserves_Presentation` If a phenomenon presents the substrate, its gauge transform also presents the substrate.
 
 This formalizes the idea that different representational perspectives (different gauges) are equivalent. The substrate-presentation structure is gauge-invariant. This directly parallels gauge invariance in physics where physical laws remain unchanged under certain transformations.
 
@@ -148,19 +148,19 @@ Information is a non-negative quantity attached to phenomena. Time is an emergen
 
 The formalization proves multiple theorems establishing non-dual structure and its consequences.
 
--`Nonduality` Every phenomenon is inseparable from the substrate. This is the master theorem from which others follow.
+`Nonduality` Every phenomenon is inseparable from the substrate. This is the master theorem from which others follow.
 
--`Causal_NotTwo` Causally related phenomena are both inseparable from substrate. Causality cannot establish real separation.
+`Causal_NotTwo` Causally related phenomena are both inseparable from substrate. Causality cannot establish real separation.
 
--`Spacetime_Unreality` Any entity with spacetime coordinates is inseparable from substrate. Spacetime localization does not confer independent reality.
+`Spacetime_Unreality` Any entity with spacetime coordinates is inseparable from substrate. Spacetime localization does not confer independent reality.
 
--`Info_Nonreifying` Phenomena carrying information remain inseparable from substrate. Information does not create substance.
+`Info_Nonreifying` Phenomena carrying information remain inseparable from substrate. Information does not create substance.
 
--`Time_Emergent_NotTwo` Temporal ordering does not create separation from substrate. Time is emergent feature of presentation.
+`Time_Emergent_NotTwo` Temporal ordering does not create separation from substrate. Time is emergent feature of presentation.
 
--`Symmetry_Preserves_NotTwo` Gauge transformations preserve inseparability. Different perspectives do not fragment underlying unity.
+`Symmetry_Preserves_NotTwo` Gauge transformations preserve inseparability. Different perspectives do not fragment underlying unity.
 
--`Concepts_Don't_Reify` Conceptual annotation of phenomena does not make them separately real. Concepts are tools for navigation, not discoveries of intrinsic divisions.
+`Concepts_Don't_Reify` Conceptual annotation of phenomena does not make them separately real. Concepts are tools for navigation, not discoveries of intrinsic divisions.
 
 Each theorem is machine-verified and follows necessarily from axioms. 
 
