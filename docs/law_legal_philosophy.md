@@ -1,5 +1,5 @@
 # The Unique Ontic Substance: Implications for Law and Legal Philosophy
-
+[![DOI](https://zenodo.org/badge/1079066681.svg)](https://doi.org/10.5281/zenodo.17388701)
 ## Introduction
 
 The machine-verified formalization of non-dual ontology (DOI 10.5281/zenodo.17388701) establishes through rigorous proof that all phenomena lack intrinsic essence, are inseparable presentations of a unique substrate Ω, arise dependently from other phenomena, and that ownership is conventional rather than ontological. These formally proven claims have profound implications for law and legal philosophy, requiring reconceptualization of legal personhood, criminal responsibility, property rights, contracts, legal authority, jurisdiction, constitutional foundations, and the nature of law itself. What distinguishes this from philosophical speculation about law is that every implication follows deductively from axioms verified mechanically to be internally consistent, the formalization provides formal mathematics rather than normative legal theory, yet its descriptive metaphysical structure constrains what legal frameworks can coherently claim about their foundations.
