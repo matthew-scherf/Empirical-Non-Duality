@@ -8,11 +8,11 @@ This document serves as a **complete user manual** for the UOS (Unique Ontic Sub
 
 ### 1.1 Purpose
 
-The **Unique Ontic Substrate (UOS)** project unites a formally verified metaphysical theory with an empirical, trainable AI model. The goal is to demonstrate that a **non-dual ontology**—in which awareness (Ω) is not an acting agent but the silent ground of relational phenomena (φ)—can be implemented, trained, and empirically verified.
+The **Unique Ontic Substrate (UOS)** project unites a formally verified metaphysical theory with an empirical, trainable AI model. The goal is to demonstrate that a non-dual ontology in which awareness (Ω) is not an acting agent but the silent ground of relational phenomena (φ) can be implemented, trained, and empirically verified.
 
 ### 1.2 Core claim
 
-> Reality can be modeled as relational, not causal: appearances condition each other within an attributeless substrate. The UOS framework expresses this structure formally (in Isabelle/HOL) and computationally (in PyTorch).
+> Reality can be modeled as relational, not causal, as appearances condition each other within an attributeless substrate. The UOS framework expresses this structure formally (in Isabelle/HOL) and computationally (in PyTorch).
 
 ### 1.3 Components
 
