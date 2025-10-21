@@ -1,0 +1,2 @@
+run_dir,adj_shape_rows,adj_shape_cols,adj_fro,adj_density,adj_upper_sum,adj_lower_sum,temporal_violations,entropy_mean,entropy_std,entropy_lnK,entropy_n,contrib_mean,contrib_std,contrib_pos_frac,contrib_n,omega_norm,omega_dim
+runs\full_dump_20251021_220151,8,8,2.202343102700316,0.4375,4.968147276,5.4833827920000004,12,2.2995429908794374,0.00045504634532469686,2.302585092994046,64,0.0034572580875,0.00424712842665142,0.75,8,0.17828099751288215,64

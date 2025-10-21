@@ -1,0 +1,16 @@
+{
+  "run_dir": "runs\\full_dump_20251021_214950",
+  "epochs": 11,
+  "best_val_acc": 0.9785031847133758,
+  "final_val_acc": 0.9769108280254777,
+  "final_train_acc": 0.992137526652452,
+  "adj_shape_rows": 12,
+  "adj_shape_cols": 12,
+  "adj_fro": 2.7291254596195085,
+  "adj_density": 0.20833333333333334,
+  "adj_upper_sum": 0.0,
+  "adj_lower_sum": 14.28393168,
+  "temporal_violations": 0,
+  "omega_norm": 0.23703232190734091,
+  "omega_dim": 129
+}

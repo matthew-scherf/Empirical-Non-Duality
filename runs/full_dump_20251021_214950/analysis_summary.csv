@@ -1,0 +1,2 @@
+run_dir,epochs,best_val_acc,final_val_acc,final_train_acc,adj_shape_rows,adj_shape_cols,adj_fro,adj_density,adj_upper_sum,adj_lower_sum,temporal_violations,omega_norm,omega_dim
+runs\full_dump_20251021_214950,11,0.9785031847133758,0.9769108280254777,0.992137526652452,12,12,2.7291254596195085,0.20833333333333334,0.0,14.28393168,0,0.23703232190734091,129
