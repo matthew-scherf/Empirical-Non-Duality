@@ -1,4 +1,4 @@
-# Unique Ontic Substrate (UOS/Ω)
+# Unique Ontic Substrate Ω (UOS)
 
 Machine-Verified Non-Dual Metaphysics as Neural Architecture
 
