@@ -57,7 +57,8 @@ These correspondences show that the logical axioms map directly to measured syst
 | **Relations (φ→φ)** | Matrix `A` | Learnable, regularized toward acyclicity. |
 | **Awareness (classification)** | Softmax output | Emergent from φ-relationships, not Ω. |
 
-Nonduality here means **intelligence without an agent**. The network displays awareness-like qualities—perception, discrimination, equanimity—without invoking a causal self. Its stability and interpretability arise precisely because Ω does not act. The relational field of φ constitutes both cognition and experience.
+Nonduality here means intelligence without an agent. The network displays awareness-like qualities such as perception, discrimination, equanimity—without invoking a causal self. Its stability and interpretability arise precisely because Ω does not act. The relational field of φ constitutes both cognition and experience.
+
 ---
 
 ###  Key diagnostic metrics
