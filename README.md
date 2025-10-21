@@ -1,5 +1,6 @@
 
 # Unique Ontic Substrate Ω (UOS) 
+
 [![Verification Status](https://img.shields.io/badge/Isabelle-Verified-green)](https://isabelle.in.tum.de/)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17388701.svg)](https://doi.org/10.5281/zenodo.17388701)
@@ -22,7 +23,7 @@ From the most recent introspection run:
 
 | Measure                |                                  Result | Interpretation                                            |
 | ---------------------- | --------------------------------------: | --------------------------------------------------------- |
-| Validation accuracy    |                                  ~97.8% | Competitive performance while preserving constraints      |
+| Validation accuracy    |                                   ~98%  | Competitive performance while preserving constraints      |
 | Ω norm                 |                                   ~0.17 | Substrate exists but does not act in computation          |
 | φ→φ Frobenius norm     |                                   ~1.98 | Non-trivial relational field among appearances            |
 | φ→φ density            |                                   ~0.55 | Sparse but structured connectivity                        |
@@ -158,9 +159,10 @@ It demonstrates that non-dual metaphysics is empirically realizable and that con
 
 ## Still don't care?
 
-* For AI research: introduces a new inductive bias—non-agentive, relational learning.
-* For philosophy: provides operational, measurable support for non-dual ontology.
-* For engineering: shows that interpretability and stability improve when causation is distributed, not centralized.
+* For AI research this introduces a new inductive bias—non-agentive, relational learning.
+* For philosophy this provides operational, measurable support for non-dual ontology.
+* For engineering this shows that interpretability and stability improve when causation is distributed, not centralized.
+* For humanity, wait and see.
 
 ---
 
