@@ -126,6 +126,23 @@ Optional flags:
 * `--num-phenomena` : number of φ nodes (default 12)
 * `--epochs` : training epochs (default 20)
 
+Suggested Settings:
+
+```
+py -m uos.experiments.tuos_mnist `
+  --graph learnable_causal `
+  --epochs 20 `
+  --batch-size 64 `
+  --substrate-dim 128 `
+  --num-phenomena 12 `
+  --temporal-weight 0.30 `
+  --gauge-weight 0.02 `
+  --verbose `
+  --print-every 50 `
+  --save-state `
+  --log-file runs\train_full.log
+```
+
 Outputs:
 
 * Model checkpoints (`best.pt`)
