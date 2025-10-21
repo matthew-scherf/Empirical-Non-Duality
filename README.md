@@ -1,4 +1,4 @@
-# The Unique Ontic Substrate (TUOS / Ω)
+# Unique Ontic Substrate (UOS/Ω)
 
 Machine-Verified Non-Dual Metaphysics as Neural Architecture
 
