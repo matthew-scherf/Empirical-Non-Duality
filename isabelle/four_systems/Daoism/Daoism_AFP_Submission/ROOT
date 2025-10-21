@@ -1,7 +1,0 @@
-session "Daoism" (AFP) = HOL +
-  options [document = pdf]
-  theories
-    Daoism
-document_files (in "document")
-  "root.tex"
-
