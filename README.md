@@ -7,7 +7,7 @@
 
 
 ---
-
+### Nondual Neural Network Architecture
 UOS is a compact, research-grade system that turns a machine-verified non-dual theory into a working PyTorch model.
 
 * The theory (in Isabelle/HOL) proves that there exists one attributeless substrate Ω that does not act, and appearances φ that relate to each other.
