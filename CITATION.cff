@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this formalization, please cite it as below."
+message: "If you use this formalization, or any code derivived from it,  please cite it as below."
 type: software
-title: "The Unique Ontic Substrate"
+title: "Unique Ontic Substrate"
 abstract: "Complete formal axiomatization of non-dual metaphysics using scientifically rigorous terminology in Isabelle/HOL 2025. Proves consistency of substrate ontology with phenomenal presentations, establishing non-dualism through empirical concepts like gauge invariance, emergent spacetime, and information theory. Fourth in a series completing the contemplative-scientific bridge."
 authors:
   - family-names: "Scherf"
