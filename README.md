@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+
 # Unique Ontic Substrate Ω (UOS) — Substrate-Grounded Neural Architecture
-=======
 
 
 [![Verification Status](https://img.shields.io/badge/Isabelle-Verified-green)](https://isabelle.in.tum.de/)
