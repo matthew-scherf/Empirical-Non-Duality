@@ -129,7 +129,7 @@ Optional flags:
 Suggested Settings:
 
 ```
-py -m uos.experiments.tuos_mnist `
+py -m experiments.tuos_mnist `
   --graph learnable_causal `
   --epochs 20 `
   --batch-size 64 `
