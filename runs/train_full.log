@@ -31,3 +31,34 @@ New best val_acc: 0.9711 at epoch 4
 New best val_acc: 0.9785 at epoch 5
 Early stopping at epoch 11
 Best val acc: 0.9785031847133758
+Epoch 1/20
+  train_loss=0.9172
+  train_acc=0.9273
+  val_loss=0.3236
+  val_acc=0.9634
+  epoch_time=12.51s
+  temporal_upper_sum=0.0000
+  temporal_violations=0
+  adj_fro=2.9062
+New best val_acc: 0.9634 at epoch 1
+New best val_acc: 0.9684 at epoch 2
+New best val_acc: 0.9712 at epoch 4
+New best val_acc: 0.9760 at epoch 5
+New best val_acc: 0.9771 at epoch 10
+New best val_acc: 0.9790 at epoch 15
+Best val acc: 0.9790007961783439
+Epoch 1/20
+  train_loss=0.7987
+  train_acc=0.9261
+  val_loss=0.3004
+  val_acc=0.9700
+  epoch_time=12.20s
+  temporal_upper_sum=0.0000
+  temporal_violations=0
+  adj_fro=2.7303
+New best val_acc: 0.9700 at epoch 1
+New best val_acc: 0.9732 at epoch 2
+New best val_acc: 0.9736 at epoch 4
+New best val_acc: 0.9778 at epoch 5
+Early stopping at epoch 11
+Best val acc: 0.9778065286624203

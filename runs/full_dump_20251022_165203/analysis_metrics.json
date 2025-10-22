@@ -1,0 +1,18 @@
+{
+  "phi_phi_density": 0.421875,
+  "phi_self_mean": 0.0,
+  "phi_acyclicity": 0.5711263321257825,
+  "adj_fro": 2.060981799663802,
+  "omega_norm": 0.1475706301372771,
+  "omega_mean": 0.0008061093961428567,
+  "omega_std": 0.018574668148683585,
+  "emptiness": 0.9991938906038571,
+  "inseparability": 0.421875,
+  "entropy_mean": 2.3005450903336975,
+  "entropy_std": 0.00041896463671666563,
+  "entropy_min": 2.2992323168441713,
+  "entropy_max": 2.301385193096356,
+  "phi_contrib_mean": 0.00374873186,
+  "phi_contrib_std": 0.005267690888794165,
+  "phi_contrib_pos_frac": 0.625
+}

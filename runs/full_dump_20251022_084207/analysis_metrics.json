@@ -1,0 +1,20 @@
+{
+  "run_dir": "runs\\full_dump_20251022_084207",
+  "adj_shape_rows": 8,
+  "adj_shape_cols": 8,
+  "adj_fro": 1.8305437026317894,
+  "adj_density": 0.4375,
+  "adj_upper_sum": 3.962658064,
+  "adj_lower_sum": 4.48503145,
+  "temporal_violations": 12,
+  "entropy_mean": 2.2992969209510745,
+  "entropy_std": 0.0006572514859424216,
+  "entropy_lnK": 2.302585092994046,
+  "entropy_n": 64,
+  "contrib_mean": 0.0038678560625,
+  "contrib_std": 0.0053381496640491554,
+  "contrib_pos_frac": 0.625,
+  "contrib_n": 8,
+  "omega_norm": 0.1713299112259994,
+  "omega_dim": 64
+}
