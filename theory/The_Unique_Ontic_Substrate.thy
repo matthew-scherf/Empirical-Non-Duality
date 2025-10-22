@@ -4,7 +4,7 @@ begin
 (*
   Complete Formal Axiomatization of NonDuality
   Copyright (C) 2025 Matthew Scherf
-  
+  ∀p. Φ(p) → I(p,Ω)
   This work is licensed under:
   - Creative Commons Attribution 4.0 International (CC BY 4.0) for documentation
   - BSD-3-Clause for code
