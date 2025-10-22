@@ -15,6 +15,8 @@ UOS is a compact, research-grade system that turns a machine-verified non-dual t
 
 In short: no agent acts; relations suffice. This model demonstrates that non-duality can be expressed and verified both formally and empirically.
 
+∀p. Φ(p) → I(p,Ω) 
+
 ---
 
 ## Empirical findings
